@@ -1,0 +1,34 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/michaelrokitko/Desktop/לימודים שנקר/nudler/DBMS-sql/Database.cpp
+Database.h
+/Users/michaelrokitko/Desktop/לימודים שנקר/nudler/DBMS-sql/Database.h
+
+/Users/michaelrokitko/Desktop/לימודים שנקר/nudler/DBMS-sql/Database.h
+mysql_connection.h
+/Users/michaelrokitko/Desktop/לימודים שנקר/nudler/DBMS-sql/mysql_connection.h
+cppconn/driver.h
+-
+cppconn/exception.h
+-
+cppconn/resultset.h
+-
+cppconn/statement.h
+-
+cppconn/prepared_statement.h
+-
+
+/Users/michaelrokitko/Desktop/לימודים שנקר/nudler/DBMS-sql/main.cpp
+Database.h
+/Users/michaelrokitko/Desktop/לימודים שנקר/nudler/DBMS-sql/Database.h
+iostream
+-
+Database.h
+/Users/michaelrokitko/Desktop/לימודים שנקר/nudler/DBMS-sql/Database.h
+
