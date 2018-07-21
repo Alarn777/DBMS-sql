@@ -5,7 +5,10 @@ set(CMAKE_DEPENDS_LANGUAGES
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
   "/Users/michaelrokitko/Desktop/לימודים שנקר/nudler/DBMS-sql/Book.cpp" "/Users/michaelrokitko/Desktop/לימודים שנקר/nudler/DBMS-sql/cmake-build-debug/CMakeFiles/DBMS-sql.dir/Book.cpp.o"
+  "/Users/michaelrokitko/Desktop/לימודים שנקר/nudler/DBMS-sql/Customer.cpp" "/Users/michaelrokitko/Desktop/לימודים שנקר/nudler/DBMS-sql/cmake-build-debug/CMakeFiles/DBMS-sql.dir/Customer.cpp.o"
   "/Users/michaelrokitko/Desktop/לימודים שנקר/nudler/DBMS-sql/Database.cpp" "/Users/michaelrokitko/Desktop/לימודים שנקר/nudler/DBMS-sql/cmake-build-debug/CMakeFiles/DBMS-sql.dir/Database.cpp.o"
+  "/Users/michaelrokitko/Desktop/לימודים שנקר/nudler/DBMS-sql/Order.cpp" "/Users/michaelrokitko/Desktop/לימודים שנקר/nudler/DBMS-sql/cmake-build-debug/CMakeFiles/DBMS-sql.dir/Order.cpp.o"
+  "/Users/michaelrokitko/Desktop/לימודים שנקר/nudler/DBMS-sql/Store.cpp" "/Users/michaelrokitko/Desktop/לימודים שנקר/nudler/DBMS-sql/cmake-build-debug/CMakeFiles/DBMS-sql.dir/Store.cpp.o"
   "/Users/michaelrokitko/Desktop/לימודים שנקר/nudler/DBMS-sql/main.cpp" "/Users/michaelrokitko/Desktop/לימודים שנקר/nudler/DBMS-sql/cmake-build-debug/CMakeFiles/DBMS-sql.dir/main.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "AppleClang")

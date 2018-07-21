@@ -8,8 +8,13 @@ CMakeFiles/DBMS-sql.dir/Book.cpp.o: ../Database.h
 CMakeFiles/DBMS-sql.dir/Database.cpp.o: ../Database.cpp
 CMakeFiles/DBMS-sql.dir/Database.cpp.o: ../Database.h
 
+CMakeFiles/DBMS-sql.dir/Order.cpp.o: ../Database.h
+CMakeFiles/DBMS-sql.dir/Order.cpp.o: ../Order.cpp
+CMakeFiles/DBMS-sql.dir/Order.cpp.o: ../Order.h
+
 CMakeFiles/DBMS-sql.dir/main.cpp.o: ../Book.h
 CMakeFiles/DBMS-sql.dir/main.cpp.o: ../Database.h
+CMakeFiles/DBMS-sql.dir/main.cpp.o: ../Order.h
 CMakeFiles/DBMS-sql.dir/main.cpp.o: ../main.cpp
 CMakeFiles/DBMS-sql.dir/main.cpp.o: ../menu.h
 

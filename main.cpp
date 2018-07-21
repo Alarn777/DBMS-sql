@@ -4,12 +4,36 @@
 #include <iostream>
 #include "menu.h"
 #include "Book.h"
-
+#include "Order.h"
 using namespace std;
 int main()
 {
-    Book MyBook;
-    MyBook.showAllBooksInStore();
+//    Book MyBook;
+//    MyBook.showAllBooksInStore();
+//    Order MyOrder;
+//    MyOrder.showAllOrdersInStore();
+    Store MyStore;
+    MyStore.showAllCustomersInStore();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 //    int userChoise = -1;
 //    while (userChoise != 9) {
 //        userChoise = menu();
