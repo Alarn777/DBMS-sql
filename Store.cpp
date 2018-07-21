@@ -3,3 +3,7 @@
 //
 
 #include "Store.h"
+
+void Store::showAllCustomers() {
+    this->showAllCustomersInStore();
+}

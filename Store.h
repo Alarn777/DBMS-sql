@@ -12,8 +12,10 @@ using namespace std;
 
 class Store {
 public:
-    virtual void showAllCustomersInStore() = 0;
-
+    Store() {}
+    void showAllCustomers();
+    virtual void showAllCustomersInStore() {};
+    virtual ~Store() {}
 private:
 
 };

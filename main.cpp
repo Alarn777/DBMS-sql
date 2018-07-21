@@ -5,6 +5,7 @@
 #include "menu.h"
 #include "Book.h"
 #include "Order.h"
+#include "Customer.h"
 using namespace std;
 int main()
 {
@@ -12,9 +13,8 @@ int main()
 //    MyBook.showAllBooksInStore();
 //    Order MyOrder;
 //    MyOrder.showAllOrdersInStore();
-    Store MyStore;
-    MyStore.showAllCustomersInStore();
-
+    Customer myCustomer;
+    myCustomer.showAllCustomersInStore();
 
 
 

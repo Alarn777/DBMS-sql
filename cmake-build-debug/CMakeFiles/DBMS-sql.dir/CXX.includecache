@@ -15,6 +15,18 @@ Database.h
 /Users/michaelrokitko/Desktop/לימודים שנקר/nudler/DBMS-sql/Database.h
 iostream
 -
+Store.h
+/Users/michaelrokitko/Desktop/לימודים שנקר/nudler/DBMS-sql/Store.h
+
+/Users/michaelrokitko/Desktop/לימודים שנקר/nudler/DBMS-sql/Customer.cpp
+Customer.h
+/Users/michaelrokitko/Desktop/לימודים שנקר/nudler/DBMS-sql/Customer.h
+
+/Users/michaelrokitko/Desktop/לימודים שנקר/nudler/DBMS-sql/Customer.h
+Store.h
+/Users/michaelrokitko/Desktop/לימודים שנקר/nudler/DBMS-sql/Store.h
+iostream
+-
 
 /Users/michaelrokitko/Desktop/לימודים שנקר/nudler/DBMS-sql/Database.cpp
 Database.h
@@ -44,6 +56,16 @@ Database.h
 iostream
 -
 
+/Users/michaelrokitko/Desktop/לימודים שנקר/nudler/DBMS-sql/Store.cpp
+Store.h
+/Users/michaelrokitko/Desktop/לימודים שנקר/nudler/DBMS-sql/Store.h
+
+/Users/michaelrokitko/Desktop/לימודים שנקר/nudler/DBMS-sql/Store.h
+Database.h
+/Users/michaelrokitko/Desktop/לימודים שנקר/nudler/DBMS-sql/Database.h
+iostream
+-
+
 /Users/michaelrokitko/Desktop/לימודים שנקר/nudler/DBMS-sql/main.cpp
 iostream
 -
@@ -53,6 +75,8 @@ Book.h
 /Users/michaelrokitko/Desktop/לימודים שנקר/nudler/DBMS-sql/Book.h
 Order.h
 /Users/michaelrokitko/Desktop/לימודים שנקר/nudler/DBMS-sql/Order.h
+Customer.h
+/Users/michaelrokitko/Desktop/לימודים שנקר/nudler/DBMS-sql/Customer.h
 
 /Users/michaelrokitko/Desktop/לימודים שנקר/nudler/DBMS-sql/menu.h
 iostream
