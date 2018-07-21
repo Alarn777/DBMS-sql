@@ -123,6 +123,33 @@ DBMS-sql/fast:
 	$(MAKE) -f CMakeFiles/DBMS-sql.dir/build.make CMakeFiles/DBMS-sql.dir/build
 .PHONY : DBMS-sql/fast
 
+Book.o: Book.cpp.o
+
+.PHONY : Book.o
+
+# target to build an object file
+Book.cpp.o:
+	$(MAKE) -f CMakeFiles/DBMS-sql.dir/build.make CMakeFiles/DBMS-sql.dir/Book.cpp.o
+.PHONY : Book.cpp.o
+
+Book.i: Book.cpp.i
+
+.PHONY : Book.i
+
+# target to preprocess a source file
+Book.cpp.i:
+	$(MAKE) -f CMakeFiles/DBMS-sql.dir/build.make CMakeFiles/DBMS-sql.dir/Book.cpp.i
+.PHONY : Book.cpp.i
+
+Book.s: Book.cpp.s
+
+.PHONY : Book.s
+
+# target to generate assembly for a file
+Book.cpp.s:
+	$(MAKE) -f CMakeFiles/DBMS-sql.dir/build.make CMakeFiles/DBMS-sql.dir/Book.cpp.s
+.PHONY : Book.cpp.s
+
 Database.o: Database.cpp.o
 
 .PHONY : Database.o
@@ -186,6 +213,9 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... DBMS-sql"
+	@echo "... Book.o"
+	@echo "... Book.i"
+	@echo "... Book.s"
 	@echo "... Database.o"
 	@echo "... Database.i"
 	@echo "... Database.s"

@@ -6,6 +6,16 @@
 
 #IncludeRegexTransform: 
 
+/Users/michaelrokitko/Desktop/לימודים שנקר/nudler/DBMS-sql/Book.cpp
+Book.h
+/Users/michaelrokitko/Desktop/לימודים שנקר/nudler/DBMS-sql/Book.h
+
+/Users/michaelrokitko/Desktop/לימודים שנקר/nudler/DBMS-sql/Book.h
+Database.h
+/Users/michaelrokitko/Desktop/לימודים שנקר/nudler/DBMS-sql/Database.h
+iostream
+-
+
 /Users/michaelrokitko/Desktop/לימודים שנקר/nudler/DBMS-sql/Database.cpp
 Database.h
 /Users/michaelrokitko/Desktop/לימודים שנקר/nudler/DBMS-sql/Database.h
@@ -25,10 +35,16 @@ cppconn/prepared_statement.h
 -
 
 /Users/michaelrokitko/Desktop/לימודים שנקר/nudler/DBMS-sql/main.cpp
-Database.h
-/Users/michaelrokitko/Desktop/לימודים שנקר/nudler/DBMS-sql/Database.h
 iostream
 -
-Database.h
-/Users/michaelrokitko/Desktop/לימודים שנקר/nudler/DBMS-sql/Database.h
+menu.h
+/Users/michaelrokitko/Desktop/לימודים שנקר/nudler/DBMS-sql/menu.h
+Book.h
+/Users/michaelrokitko/Desktop/לימודים שנקר/nudler/DBMS-sql/Book.h
+
+/Users/michaelrokitko/Desktop/לימודים שנקר/nudler/DBMS-sql/menu.h
+iostream
+-
+string
+-
 

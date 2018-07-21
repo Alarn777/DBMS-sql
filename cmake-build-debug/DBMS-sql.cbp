@@ -84,6 +84,12 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="/Users/michaelrokitko/Desktop/לימודים שנקר/nudler/DBMS-sql/Book.cpp">
+			<Option target="DBMS-sql"/>
+		</Unit>
+		<Unit filename="/Users/michaelrokitko/Desktop/לימודים שנקר/nudler/DBMS-sql/Book.h">
+			<Option target="DBMS-sql"/>
+		</Unit>
 		<Unit filename="/Users/michaelrokitko/Desktop/לימודים שנקר/nudler/DBMS-sql/Database.cpp">
 			<Option target="DBMS-sql"/>
 		</Unit>

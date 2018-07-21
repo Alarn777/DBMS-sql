@@ -2,6 +2,11 @@
 // Created by Michael Rokitko on 10/06/2018.
 //
 
+
+// Include in your project:
+//while (userChoise != 9) {
+//      userChoise = menu();
+//      switch (userChoise) { }
 #ifndef PLANES_MENU_H
 #define PLANES_MENU_H
 #include <iostream>

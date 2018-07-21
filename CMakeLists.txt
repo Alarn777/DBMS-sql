@@ -18,7 +18,10 @@ set(SOURCE_FILES
         main.cpp
         menu.h
         Database.cpp
-        Database.h)
+        Database.h
+        Book.cpp
+        Book.h
+        )
 add_executable(DBMS-sql ${SOURCE_FILES})
 
 

@@ -1,6 +1,7 @@
 file(REMOVE_RECURSE
   "CMakeFiles/DBMS-sql.dir/main.cpp.o"
   "CMakeFiles/DBMS-sql.dir/Database.cpp.o"
+  "CMakeFiles/DBMS-sql.dir/Book.cpp.o"
   "DBMS-sql.pdb"
   "DBMS-sql"
 )
