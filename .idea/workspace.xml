@@ -12,24 +12,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2bc030fa-d21f-4649-a56e-cef5b5022c63" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Supplier.cpp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Supplier.h" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/DBMS-sql.dir/main.cpp.o" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/DBMS-sql" afterPath="$PROJECT_DIR$/cmake-build-debug/DBMS-sql" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Book.h" afterPath="$PROJECT_DIR$/Book.h" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CMakeLists.txt" afterPath="$PROJECT_DIR$/CMakeLists.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Customer.h" afterPath="$PROJECT_DIR$/Customer.h" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Store.cpp" afterPath="$PROJECT_DIR$/Store.cpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/DBMS-sql.dir/DependInfo.cmake" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/DBMS-sql.dir/DependInfo.cmake" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/DBMS-sql.dir/build.make" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/DBMS-sql.dir/build.make" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/DBMS-sql.dir/cmake_clean.cmake" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/DBMS-sql.dir/cmake_clean.cmake" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/DBMS-sql.dir/link.txt" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/DBMS-sql.dir/link.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/DBMS-sql.dir/progress.make" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/DBMS-sql.dir/progress.make" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/progress.marks" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/progress.marks" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/DBMS-sql.cbp" afterPath="$PROJECT_DIR$/cmake-build-debug/DBMS-sql.cbp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/Makefile" afterPath="$PROJECT_DIR$/cmake-build-debug/Makefile" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/main.cpp" afterPath="$PROJECT_DIR$/main.cpp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/DBMS-sql.dir/CXX.includecache" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/DBMS-sql.dir/CXX.includecache" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/DBMS-sql.dir/depend.internal" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/DBMS-sql.dir/depend.internal" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/DBMS-sql.dir/depend.make" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/DBMS-sql.dir/depend.make" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -197,7 +184,7 @@
       <workItem from="1531228024866" duration="42000" />
       <workItem from="1531774342330" duration="2000" />
       <workItem from="1532127053395" duration="19000" />
-      <workItem from="1532172142155" duration="23522000" />
+      <workItem from="1532172142155" duration="23637000" />
     </task>
     <task id="LOCAL-00001" summary="Show All Books Working">
       <created>1532182898379</created>
@@ -220,11 +207,18 @@
       <option name="project" value="LOCAL" />
       <updated>1532200798018</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Can show all books.&#10;Can show all Customers.&#10;Can show all Orders.&#10;Options : 1-4, 6, 8, 9 Working">
+      <created>1532214115243</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1532214115243</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="25361000" />
+    <option name="totallyTimeSpent" value="25476000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1" y="23" width="1280" height="728" extended-state="6" />
@@ -281,7 +275,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Show All Books Working" />
     <MESSAGE value="Can show all books.&#10;Can show all Customers.&#10;Can show all Orders." />
-    <option name="LAST_COMMIT_MESSAGE" value="Can show all books.&#10;Can show all Customers.&#10;Can show all Orders." />
+    <MESSAGE value="Can show all books.&#10;Can show all Customers.&#10;Can show all Orders.&#10;Options : 1-4, 6, 8, 9 Working" />
+    <option name="LAST_COMMIT_MESSAGE" value="Can show all books.&#10;Can show all Customers.&#10;Can show all Orders.&#10;Options : 1-4, 6, 8, 9 Working" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

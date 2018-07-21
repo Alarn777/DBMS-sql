@@ -22,11 +22,16 @@ CMakeFiles/DBMS-sql.dir/Store.cpp.o: ../Database.h
 CMakeFiles/DBMS-sql.dir/Store.cpp.o: ../Store.cpp
 CMakeFiles/DBMS-sql.dir/Store.cpp.o: ../Store.h
 
+CMakeFiles/DBMS-sql.dir/Supplier.cpp.o: ../Database.h
+CMakeFiles/DBMS-sql.dir/Supplier.cpp.o: ../Supplier.cpp
+CMakeFiles/DBMS-sql.dir/Supplier.cpp.o: ../Supplier.h
+
 CMakeFiles/DBMS-sql.dir/main.cpp.o: ../Book.h
 CMakeFiles/DBMS-sql.dir/main.cpp.o: ../Customer.h
 CMakeFiles/DBMS-sql.dir/main.cpp.o: ../Database.h
 CMakeFiles/DBMS-sql.dir/main.cpp.o: ../Order.h
 CMakeFiles/DBMS-sql.dir/main.cpp.o: ../Store.h
+CMakeFiles/DBMS-sql.dir/main.cpp.o: ../Supplier.h
 CMakeFiles/DBMS-sql.dir/main.cpp.o: ../main.cpp
 CMakeFiles/DBMS-sql.dir/main.cpp.o: ../menu.h
 
