@@ -184,7 +184,7 @@
       <workItem from="1531228024866" duration="42000" />
       <workItem from="1531774342330" duration="2000" />
       <workItem from="1532127053395" duration="19000" />
-      <workItem from="1532172142155" duration="23637000" />
+      <workItem from="1532172142155" duration="23646000" />
     </task>
     <task id="LOCAL-00001" summary="Show All Books Working">
       <created>1532182898379</created>
@@ -214,11 +214,18 @@
       <option name="project" value="LOCAL" />
       <updated>1532214115243</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Can show all books.&#10;Can show all Customers.&#10;Can show all Orders.&#10;Options : 1-4, 6, 8, 9 Working">
+      <created>1532214151544</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1532214151544</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="25476000" />
+    <option name="totallyTimeSpent" value="25485000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1" y="23" width="1280" height="728" extended-state="6" />
