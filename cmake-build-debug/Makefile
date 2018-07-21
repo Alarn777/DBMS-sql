@@ -258,6 +258,33 @@ Store.cpp.s:
 	$(MAKE) -f CMakeFiles/DBMS-sql.dir/build.make CMakeFiles/DBMS-sql.dir/Store.cpp.s
 .PHONY : Store.cpp.s
 
+Supplier.o: Supplier.cpp.o
+
+.PHONY : Supplier.o
+
+# target to build an object file
+Supplier.cpp.o:
+	$(MAKE) -f CMakeFiles/DBMS-sql.dir/build.make CMakeFiles/DBMS-sql.dir/Supplier.cpp.o
+.PHONY : Supplier.cpp.o
+
+Supplier.i: Supplier.cpp.i
+
+.PHONY : Supplier.i
+
+# target to preprocess a source file
+Supplier.cpp.i:
+	$(MAKE) -f CMakeFiles/DBMS-sql.dir/build.make CMakeFiles/DBMS-sql.dir/Supplier.cpp.i
+.PHONY : Supplier.cpp.i
+
+Supplier.s: Supplier.cpp.s
+
+.PHONY : Supplier.s
+
+# target to generate assembly for a file
+Supplier.cpp.s:
+	$(MAKE) -f CMakeFiles/DBMS-sql.dir/build.make CMakeFiles/DBMS-sql.dir/Supplier.cpp.s
+.PHONY : Supplier.cpp.s
+
 main.o: main.cpp.o
 
 .PHONY : main.o
@@ -309,6 +336,9 @@ help:
 	@echo "... Store.o"
 	@echo "... Store.i"
 	@echo "... Store.s"
+	@echo "... Supplier.o"
+	@echo "... Supplier.i"
+	@echo "... Supplier.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

@@ -10,7 +10,7 @@
 
 #define CON Database &db = Database::getInstance();Connection *con = db.getConnection();
 using namespace std;
-class Store;
+
 class Customer {
 public:
      void showAllCustomersInStore() {

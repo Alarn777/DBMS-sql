@@ -114,6 +114,12 @@
 		<Unit filename="/Users/michaelrokitko/Desktop/לימודים שנקר/nudler/DBMS-sql/Store.h">
 			<Option target="DBMS-sql"/>
 		</Unit>
+		<Unit filename="/Users/michaelrokitko/Desktop/לימודים שנקר/nudler/DBMS-sql/Supplier.cpp">
+			<Option target="DBMS-sql"/>
+		</Unit>
+		<Unit filename="/Users/michaelrokitko/Desktop/לימודים שנקר/nudler/DBMS-sql/Supplier.h">
+			<Option target="DBMS-sql"/>
+		</Unit>
 		<Unit filename="/Users/michaelrokitko/Desktop/לימודים שנקר/nudler/DBMS-sql/main.cpp">
 			<Option target="DBMS-sql"/>
 		</Unit>

@@ -21,7 +21,7 @@ set(SOURCE_FILES
         Database.h
         Book.cpp
         Book.h
-        Order.cpp Order.h Customer.cpp Customer.h Store.cpp Store.h)
+        Order.cpp Order.h Customer.cpp Customer.h Store.cpp Store.h Supplier.cpp Supplier.h)
 add_executable(DBMS-sql ${SOURCE_FILES})
 
 

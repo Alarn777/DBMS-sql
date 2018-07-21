@@ -9,6 +9,7 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "/Users/michaelrokitko/Desktop/לימודים שנקר/nudler/DBMS-sql/Database.cpp" "/Users/michaelrokitko/Desktop/לימודים שנקר/nudler/DBMS-sql/cmake-build-debug/CMakeFiles/DBMS-sql.dir/Database.cpp.o"
   "/Users/michaelrokitko/Desktop/לימודים שנקר/nudler/DBMS-sql/Order.cpp" "/Users/michaelrokitko/Desktop/לימודים שנקר/nudler/DBMS-sql/cmake-build-debug/CMakeFiles/DBMS-sql.dir/Order.cpp.o"
   "/Users/michaelrokitko/Desktop/לימודים שנקר/nudler/DBMS-sql/Store.cpp" "/Users/michaelrokitko/Desktop/לימודים שנקר/nudler/DBMS-sql/cmake-build-debug/CMakeFiles/DBMS-sql.dir/Store.cpp.o"
+  "/Users/michaelrokitko/Desktop/לימודים שנקר/nudler/DBMS-sql/Supplier.cpp" "/Users/michaelrokitko/Desktop/לימודים שנקר/nudler/DBMS-sql/cmake-build-debug/CMakeFiles/DBMS-sql.dir/Supplier.cpp.o"
   "/Users/michaelrokitko/Desktop/לימודים שנקר/nudler/DBMS-sql/main.cpp" "/Users/michaelrokitko/Desktop/לימודים שנקר/nudler/DBMS-sql/cmake-build-debug/CMakeFiles/DBMS-sql.dir/main.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "AppleClang")
