@@ -94,18 +94,12 @@ public:
                 cout << "-------------------------------------" << endl;
             }
         }
-
-//                cout << "-------------------------------------" << endl;
-//                cout << "ISBN: " << isbn << endl;
-//                cout << "Is not in our Storage !" << endl;
-//                cout << "-------------------------------------" << endl;
-
         delete pstmt;
         delete rset;
         delete con;
         return toReturn;
         }
-    bool booksSoldInTimePeriod(string& start,string& end) {
+    void booksSoldInTimePeriod(string& start,string& end) {
         Database &db = Database::getInstance();
         Connection *con = db.getConnection();
         PreparedStatement *pstmt = con->prepareStatement("SELECT * FROM Orders where date between ? and ? ");
@@ -124,7 +118,7 @@ public:
         delete rset;
         delete con;
     }
-    bool booksSoldFrom(string& start,int isbn) {
+    void booksSoldFrom(string& start,int isbn) {
         int sellCount = 0;
         Database &db = Database::getInstance();
         Connection *con = db.getConnection();
@@ -156,7 +150,6 @@ public:
                     sellCount += rsetBookInOrder->getInt("quantity");
                     allBookInOrder--;
                     rsetBookInOrder->next();
-
                 }
                 delete pstmtBookInOrder;
                 delete rsetBookInOrder;
@@ -165,7 +158,6 @@ public:
             }
             delete pstmtOrder;
             delete rsetOrder;
-
                 cout << "-------------------------------------" << endl;
                 cout << "ISBN: " + rset->getString("ISBN") << endl;
                 cout << "Book Name: " + rset->getString("book_name") << endl;
@@ -173,15 +165,7 @@ public:
                 cout << "From : " << start << endl;
                 cout << "-------------------------------------" << endl;
                 rset->next();
-
             }
-
-
-
-
-
-
-
         delete pstmt;
         delete rset;
         delete con;

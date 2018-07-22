@@ -58,6 +58,48 @@ public:
         delete rset;
         delete con;
     }
+    void bookOredredByCustomerSince(string& ssn,string &start) {
+        int booksQuantity = 0;
+        Database &db = Database::getInstance();
+        Connection *con = db.getConnection();
+        PreparedStatement *pstmt = con->prepareStatement("SELECT Customer.SSN ,customer_order.order_id FROM Customer RIGHT JOIN customer_order ON Customer.SSN=customer_order.customer_id WHERE Customer.SSN= ?;");
+        pstmt->setString(1, ssn);
+        ResultSet *rset = pstmt->executeQuery();
+        rset->first();
+        size_t all = rset->rowsCount();
+        if (all < 1) {
+            cout << "-------------------------------------" << endl;
+            cerr << "Invalid SSN!" << endl;
+            cout << "-------------------------------------" << endl;
+            delete pstmt;
+            delete rset;
+            delete con;
+            return;
+        }
+        while (all >= 1) {
+            PreparedStatement *pstmtOrder = con->prepareStatement("SELECT Orders.idOrder,books_in_order.quantity FROM Orders RIGHT JOIN books_in_order ON Orders.idOrder=books_in_order.order_id  where date > ? and idOrder = ?");
+            pstmtOrder->setString(1, start);
+            pstmtOrder->setString(2, rset->getString("order_id"));
+            ResultSet *rsetOrder = pstmtOrder->executeQuery();
+            rsetOrder->first();
+            size_t allOrder = rsetOrder->rowsCount();
+            while (allOrder >= 1) {
+                booksQuantity += rsetOrder->getInt("quantity");
+                allOrder--;
+                rsetOrder->next();
+            }
+
+            all--;
+            rset->next();
+
+        }
+        cout << "-------------------------------------" << endl;
+        cout << "Customer: " << ssn  << " bought: " << booksQuantity << " books since: " << start << endl;
+        cout << "-------------------------------------" << endl;
+        delete pstmt;
+        delete rset;
+        delete con;
+    }
 };
 
 

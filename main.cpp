@@ -10,13 +10,14 @@
 using namespace std;
 int main()
 {
+    Store MyStore;
     Book MyBook;
-//    MyBook.showAllBooksInStore();
     Order MyOrder;
-//    MyOrder.showAllOrdersInStore();
     Customer myCustomer;
-//    myCustomer.showAllCustomersInStore();
     Supplier mySupplier;
+//    MyBook.showAllBooksInStore();
+//    MyOrder.showAllOrdersInStore();
+//    myCustomer.showAllCustomersInStore();
 //    mySupplier.showAllSuppliers();
 //    MyBook.showBooksWithDiscounts();
 //    MyBook.checkIfInStorage(757230);
@@ -25,10 +26,13 @@ int main()
 //    mySupplier.checkAllSuppliersOfABook(757230);
 //    mySupplier.checkAllSuppliersOfABook(378249);
 //    mySupplier.checkAllSuppliersOfABook(111111);
-//    string start = "2018-05-12 10:34:09";
+    string start = "2018-03-12 09:34:09";
+    string end = "2018-10-12 10:34:09";
 //    MyBook.booksSoldFrom(start,378249);
-
-
+//    MyStore.showAllTransactions(start,end);
+    string ssn = "676128868";
+    string startBookOredredByCustomerSince = "2018-05-12 09:34:09";
+    myCustomer.bookOredredByCustomerSince(ssn,startBookOredredByCustomerSince);
 
 
 

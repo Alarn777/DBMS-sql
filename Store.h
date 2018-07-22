@@ -14,7 +14,57 @@ class Store {
 public:
     Store() {}
     void showAllCustomers();
-    virtual void showAllCustomersInStore() {};
+    void showAllTransactions(string& start,string& end){
+        Database &db = Database::getInstance();
+        Connection *con = db.getConnection();
+        PreparedStatement *pstmt = con->prepareStatement("SELECT * FROM resupply where date_time between ? and ? ");
+        pstmt->setString(1, start);
+        pstmt->setString(2, end);
+        ResultSet *rset = pstmt->executeQuery();
+        rset->first();
+        size_t all = rset->rowsCount();
+        while (all >= 1) {
+            cout << "-------------------------------------" << endl;
+            cout << "Resupply ID: "<< rset->getInt("resupply_id") << endl;
+            cout << "Total Price paid: " << rset->getInt("total_price") << endl;
+            cout << "Status: " << rset->getString("status") << endl;
+            cout << "-------------------------------------" << endl;
+            rset->next();
+            all--;
+        }
+        pstmt = con->prepareStatement("SELECT * FROM Orders where date between ? and ? ");
+        pstmt->setString(1, start);
+        pstmt->setString(2, end);
+        rset = pstmt->executeQuery();
+        rset->first();
+        all = rset->rowsCount();
+        while (all >= 1) {
+            cout << "-------------------------------------" << endl;
+            cout << "Order ID: "<< rset->getInt("idOrder") << endl;
+            cout << "Total Price paid: " << rset->getInt("TotalPrice") << endl;
+            cout << "Status: " << rset->getString("status") << endl;
+            cout << "-------------------------------------" << endl;
+            rset->next();
+            all--;
+        }
+
+        delete pstmt;
+        delete rset;
+        delete con;
+
+
+
+
+
+
+
+
+
+
+
+
+
+    }
     virtual ~Store() {}
 private:
 
