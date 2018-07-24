@@ -40,8 +40,8 @@ public:
         all = rset->rowsCount();
         while (all >= 1) {
             cout << "-------------------------------------" << endl;
-            cout << "Order ID: "<< rset->getInt("idOrder") << endl;
-            cout << "Total Price paid: " << rset->getInt("TotalPrice") << endl;
+            cout << "Purchase ID: "<< rset->getInt("idOrder") << endl;
+            cout << "Total Money received: " << rset->getInt("TotalPrice") << endl;
             cout << "Status: " << rset->getString("status") << endl;
             cout << "-------------------------------------" << endl;
             rset->next();

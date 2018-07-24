@@ -44,7 +44,6 @@ public:
                 cout << "Address: " +  Address->getString("City");
                 cout << "," + Address->getString("Street");
                 cout << "," + Address->getString("House") << endl;
-                cout << "Books Purchased: " + rset->getString("books_ordered") << endl;
                 cout << "-------------------------------------" << endl;
             } else {
                 cerr << "No Such Customer Found!" << endl;
@@ -96,6 +95,59 @@ public:
         cout << "-------------------------------------" << endl;
         cout << "Customer: " << ssn  << " bought: " << booksQuantity << " books since: " << start << endl;
         cout << "-------------------------------------" << endl;
+        delete pstmt;
+        delete rset;
+        delete con;
+    }
+    void maxBooksBought()
+    {
+        int maxCount[2];
+        Database &db = Database::getInstance();
+        Connection *con = db.getConnection();
+        PreparedStatement *pstmt = con->prepareStatement("SELECT * FROM Bookstore.Customer h1\n"
+                                                                 "\tINNER JOIN customer_order AS h2\n"
+                                                                 "\ton h1.SSN = h2.customer_id \n"
+                                                                 "    INNER JOIN Orders as h3\n"
+                                                                 "    on h3.idOrder = h2.order_id \n"
+                                                                 "    INNER JOIN books_in_order as h4\n"
+                                                                 "    on h4.order_id = h3.idOrder\n"
+                                                                 "    ORDER BY SSN DESC");
+//        pstmt->setString(1,);
+        ResultSet *rset = pstmt->executeQuery();
+        rset->first();
+        size_t all = rset->rowsCount();
+        while (all >= 1) {
+            int ssn = rset->getInt("SSN");
+            int tempcount = 0;
+                while (all > 0 && rset->getInt("SSN") == ssn) {
+                    tempcount += rset->getInt("quantity");
+                    rset->next();
+                    all--;
+                }
+                if (tempcount > maxCount[0]) {
+                    maxCount[0] = tempcount;
+                        rset->previous();
+                        maxCount[1] = rset->getInt("SSN");
+                        rset->next();
+                    }
+
+
+        }
+        pstmt = con->prepareStatement("SELECT * FROM Bookstore.Customer INNER JOIN FullName where Customer.SSN = FullName.SSN and Customer.SSN = ?");
+        pstmt->setString(1,to_string(maxCount[1]));
+        rset = pstmt->executeQuery();
+        if(rset->rowsCount() > 0)
+        {
+            rset->first();
+            cout << "-------------------------------------" << endl;
+            cout << "Customer: " << rset->getString("FName") << " " << rset->getString("LName")  << " bought " << maxCount[0] << " books. Which is the maximum in our store!" << endl;
+            cout << "-------------------------------------" << endl;
+        }
+
+
+
+
+
         delete pstmt;
         delete rset;
         delete con;

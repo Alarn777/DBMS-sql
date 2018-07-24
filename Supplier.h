@@ -43,22 +43,22 @@ public:
         delete con;
     }
 
-    void checkAllSuppliersOfABook(int isbn) {
+    void checkAllSuppliersOfABook(string& book_name) {
         Database &db = Database::getInstance();
         Connection *con = db.getConnection();
-        PreparedStatement *pstmt = con->prepareStatement("SELECT * FROM supplier_books WHERE book_isbn = ? ");
-        pstmt->setString(1, to_string(isbn));
+        PreparedStatement *pstmt = con->prepareStatement("SELECT * FROM Book INNER JOIN supplier_books WHERE Book.ISBN =  supplier_books.book_isbn AND Book.book_name = ? ");
+        pstmt->setString(1, book_name);
         ResultSet *rset = pstmt->executeQuery();
         rset->first();
         size_t all = rset->rowsCount();
         if (all < 1) {
             cout << "-------------------------------------" << endl;
-            cout << "ISBN: " << isbn;
-            cout << " Is not valid!" << endl;
+            cout << "Book name : " << book_name;
+            cout << " Does not in not exist!" << endl;
             cout << "-------------------------------------" << endl;
         } else {
             cout << "-------------------------------------" << endl;
-            cout << "Book with ISBN: " + rset->getString("book_isbn") << endl;
+            cout << "Book: " + rset->getString("book_name") << endl;
             cout << "Can be provided by: " << endl;
             while (all >= 1) {
                 PreparedStatement *pstmtForSupplier = con->prepareStatement(
