@@ -152,6 +152,54 @@ public:
         delete rset;
         delete con;
     }
+    void moneySavedBySpecificCustomer(string& ssn,string& start){
+        Database &db = Database::getInstance();
+        int moneySaved = 0,customerDiscount = 1;
+        Connection *con = db.getConnection();
+        PreparedStatement *pstmt = con->prepareStatement(
+                "SELECT * FROM Bookstore.Customer INNER JOIN customer_order where customer_order.customer_id = Customer.SSN and customer_id = ?");
+        pstmt->setString(1,ssn);
+        ResultSet *rset = pstmt->executeQuery();
+        rset->first();
+        size_t allOrders = rset->rowsCount();
+        if(rset->rowsCount() >=1)
+        {
+            customerDiscount = rset->getInt("Discount");
+        }
+        while (allOrders >= 1) {
+            PreparedStatement *pstmtBooks = con->prepareStatement(
+                    "SELECT * FROM Bookstore.books_in_order INNER JOIN Book where Book.ISBN = books_in_order.books_id and order_id = ?");
+            pstmt->setString(1,rset->getString("order_id"));
+            ResultSet *rsetBooks = pstmt->executeQuery();
+            rsetBooks->first();
+            size_t allBooks = rset->rowsCount();
+            while(allBooks >=1)
+            {
+                PreparedStatement *pstmtBookPrice = con->prepareStatement("select * FROM Bookstore.Book INNER JOIN book_price where Book.ISBN = Book_price.idbook and ISBN = ?");
+                        pstmt->setString(1,rset->getString("ISBN"));
+                ResultSet *rsetBookPrice = pstmt->executeQuery();
+                rsetBookPrice->first();
+                int bookPrice = rsetBookPrice->getInt("customer_price");
+                int bookQuantity = rsetBooks->getInt("quantity");
+                int bookDiscount = rsetBooks->getInt("global_discount");
+                int tempMoney = 0;
+                moneySaved += (bookPrice * bookQuantity) - bookPrice * bookQuantity * bookDiscount;
+                delete pstmtBookPrice;
+                delete rsetBookPrice;
+                allBooks--;
+                rsetBooks->next();
+            }
+            rset->next();
+            allOrders--;
+            delete pstmtBooks;
+            delete rsetBooks;
+        }
+        delete pstmt;
+        delete rset;
+        delete con;
+        moneySaved = moneySaved * customerDiscount;
+        cout << moneySaved << endl;
+    }
 };
 
 

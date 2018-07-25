@@ -76,6 +76,43 @@ public:
         delete rset;
         delete con;
     }
+    void maximumBooksProvided(string& date){
+        int maxCount[2] = {};
+        Database &db = Database::getInstance();
+        Connection *con = db.getConnection();
+        PreparedStatement *pstmt = con->prepareStatement("SELECT * FROM Bookstore.resupply INNER JOIN resupply_books where resupply.resupply_id = resupply_books.resuply_id  and date_time > ? ORDER BY resuply_id DESC");
+        pstmt->setString(1,date);
+        ResultSet *rset = pstmt->executeQuery();
+        rset->first();
+        size_t all = rset->rowsCount();
+        while (all >= 1) {
+            int supplier_id = rset->getInt("supplier_id");
+            int tempcount = 0;
+            while (all > 0 && rset->getInt("supplier_id") == supplier_id) {
+                tempcount += rset->getInt("book_quantity");
+                rset->next();
+                all--;
+            }
+            if (tempcount > maxCount[0]) {
+                maxCount[0] = tempcount;
+                rset->previous();
+                maxCount[1] = rset->getInt("supplier_id");
+                rset->next();
+            }
+        }
+        pstmt = con->prepareStatement("SELECT * FROM Bookstore.Supplier INNER JOIN Supplier_address WHERE idSupplier = ? and idSupplier= idSupplier_address");
+        pstmt->setString(1,to_string(maxCount[1]));
+        rset = pstmt->executeQuery();
+        if(rset->rowsCount() > 0) {
+            rset->first();
+            cout << "-------------------------------------" << endl;
+            cout << "Supplier: " << rset->getString("name") << ". Located In: " << rset->getString("City")  << ". Supplied " << maxCount[0] << " books. Which is the maximum for our store!" << endl;
+            cout << "-------------------------------------" << endl;
+        }
+        delete pstmt;
+        delete rset;
+        delete con;
+    }
 };
 
 
