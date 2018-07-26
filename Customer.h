@@ -154,8 +154,8 @@ public:
     }
     void moneySavedBySpecificCustomer(string& ssn,string& start){
         Database &db = Database::getInstance();
-        float moneySaved = 0,customerDiscount = 1.0;
-        int realValue = 0;
+        int moneySaved = 0,realValue = 0;
+        float customerDiscount = 1.0;
         Connection *con = db.getConnection();
         PreparedStatement *pstmt = con->prepareStatement(
                 "SELECT * FROM Bookstore.Customer INNER JOIN customer_order where customer_order.customer_id = Customer.SSN and customer_id = ?");
@@ -188,7 +188,7 @@ public:
                 int bookQuantity = (rsetBooks->getInt("quantity_in_order"));
                 float bookDiscount = static_cast<float>(rsetBooks->getDouble("global_discount"));
                 float tempMoney = 0;
-                moneySaved += (bookPrice * bookQuantity) - bookPrice * bookQuantity * bookDiscount;
+//                moneySaved += (bookPrice * bookQuantity) - bookPrice * bookQuantity * bookDiscount;
                 realValue += bookPrice * bookQuantity;
                 delete pstmtBookPrice;
                 delete rsetBookPrice;
@@ -204,9 +204,10 @@ public:
             ResultSet *OrderRes = Order->executeQuery();
             OrderRes->first();
             int moneyPaid = OrderRes->getInt("TotalPrice");
-            moneySaved = realValue - moneyPaid;
+            moneySaved += realValue - moneyPaid;
             delete Order;
             delete OrderRes;
+            realValue = 0;
         }
 
         cout << "-------------------------------------" << endl;

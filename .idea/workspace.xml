@@ -12,9 +12,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2bc030fa-d21f-4649-a56e-cef5b5022c63" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/DBMS-sql.dir/main.cpp.o" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/DBMS-sql.dir/main.cpp.o" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/DBMS-sql" afterPath="$PROJECT_DIR$/cmake-build-debug/DBMS-sql" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Customer.h" afterPath="$PROJECT_DIR$/Customer.h" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/main.cpp" afterPath="$PROJECT_DIR$/main.cpp" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -52,8 +53,8 @@
       <file leaf-file-name="Customer.h" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Customer.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="67">
-              <caret line="213" column="64" lean-forward="false" selection-start-line="213" selection-start-column="64" selection-end-line="213" selection-end-column="64" />
+            <state relative-caret-position="125">
+              <caret line="201" column="10" lean-forward="false" selection-start-line="201" selection-start-column="10" selection-end-line="201" selection-end-column="10" />
               <folding />
             </state>
           </provider>
@@ -124,6 +125,7 @@
       <find>checkAllOrdersBetween</find>
       <find>quant</find>
       <find>quantity</find>
+      <find>moneySaved</find>
     </findStrings>
     <replaceStrings>
       <replace />
@@ -251,7 +253,7 @@
       <workItem from="1532540918243" duration="8024000" />
       <workItem from="1532561143075" duration="4087000" />
       <workItem from="1532590949858" duration="3310000" />
-      <workItem from="1532601957329" duration="5556000" />
+      <workItem from="1532601957329" duration="6034000" />
     </task>
     <task id="LOCAL-00001" summary="Show All Books Working">
       <created>1532182898379</created>
@@ -330,11 +332,18 @@
       <option name="project" value="LOCAL" />
       <updated>1532613884478</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="Options : 1-14 Working&#10;Fixed remarks a-b-c.&#10;Menu working.">
+      <created>1532634426633</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1532634426633</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="72809000" />
+    <option name="totallyTimeSpent" value="73287000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1280" height="730" extended-state="0" />
@@ -345,7 +354,7 @@
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.6356209" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="CMake" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295082" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.41339868" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.41339868" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295082" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -395,7 +404,8 @@
     <MESSAGE value="Options : 1-10 Working" />
     <MESSAGE value="Options : 1-11 Working&#10;Fixed remarks a-b-c.&#10;Menu working." />
     <MESSAGE value="Options : 1-13 Working&#10;Fixed remarks a-b-c.&#10;Menu working." />
-    <option name="LAST_COMMIT_MESSAGE" value="Options : 1-13 Working&#10;Fixed remarks a-b-c.&#10;Menu working." />
+    <MESSAGE value="Options : 1-14 Working&#10;Fixed remarks a-b-c.&#10;Menu working." />
+    <option name="LAST_COMMIT_MESSAGE" value="Options : 1-14 Working&#10;Fixed remarks a-b-c.&#10;Menu working." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -782,8 +792,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Customer.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="67">
-          <caret line="213" column="64" lean-forward="false" selection-start-line="213" selection-start-column="64" selection-end-line="213" selection-end-column="64" />
+        <state relative-caret-position="125">
+          <caret line="201" column="10" lean-forward="false" selection-start-line="201" selection-start-column="10" selection-end-line="201" selection-end-column="10" />
           <folding />
         </state>
       </provider>
