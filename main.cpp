@@ -38,9 +38,9 @@ int main()
 //    myCustomer.maxBooksBought();
 //    mySupplier.maximumBooksProvided(start);
 //    MyOrder.checkAllOrdersBetween(startBookOredredByCustomerSince,end);
-    MyOrder.checkAllCompletedOrdersBetween(startBookOredredByCustomerSince,end);
+//    MyOrder.checkAllCompletedOrdersBetween(startBookOredredByCustomerSince,end);
     string moneySavedSSN = "824241642";
-//    myCustomer.moneySavedBySpecificCustomer(moneySavedSSN,start);
+    myCustomer.moneySavedBySpecificCustomer(moneySavedSSN,start);
 
 
 

@@ -76,14 +76,14 @@ public:
             return;
         }
         while (all >= 1) {
-            PreparedStatement *pstmtOrder = con->prepareStatement("SELECT Orders.idOrder,books_in_order.quantity FROM Orders RIGHT JOIN books_in_order ON Orders.idOrder=books_in_order.order_id  where date > ? and idOrder = ?");
+            PreparedStatement *pstmtOrder = con->prepareStatement("SELECT Orders.idOrder,books_in_order.quantity_in_order FROM Orders RIGHT JOIN books_in_order ON Orders.idOrder=books_in_order.order_id  where date > ? and idOrder = ?");
             pstmtOrder->setString(1, start);
             pstmtOrder->setString(2, rset->getString("order_id"));
             ResultSet *rsetOrder = pstmtOrder->executeQuery();
             rsetOrder->first();
             size_t allOrder = rsetOrder->rowsCount();
             while (allOrder >= 1) {
-                booksQuantity += rsetOrder->getInt("quantity");
+                booksQuantity += rsetOrder->getInt("quantity_in_order");
                 allOrder--;
                 rsetOrder->next();
             }
@@ -120,7 +120,7 @@ public:
             int ssn = rset->getInt("SSN");
             int tempcount = 0;
                 while (all > 0 && rset->getInt("SSN") == ssn) {
-                    tempcount += rset->getInt("quantity");
+                    tempcount += rset->getInt("quantity_in_order");
                     rset->next();
                     all--;
                 }
@@ -155,6 +155,7 @@ public:
     void moneySavedBySpecificCustomer(string& ssn,string& start){
         Database &db = Database::getInstance();
         float moneySaved = 0,customerDiscount = 1.0;
+        int realValue = 0;
         Connection *con = db.getConnection();
         PreparedStatement *pstmt = con->prepareStatement(
                 "SELECT * FROM Bookstore.Customer INNER JOIN customer_order where customer_order.customer_id = Customer.SSN and customer_id = ?");
@@ -164,12 +165,13 @@ public:
         size_t allOrders = rset->rowsCount();
         if(rset->rowsCount() >=1)
         {
-            customerDiscount = rset->getInt("Discount");
-            double temp = static_cast<float>(rset->getDouble("Discount"));
-            string orderId = rset->getString("order_id");
-            cout << "";
+            customerDiscount = static_cast<float>(rset->getDouble("Discount"));
+//            double temp = static_cast<float>(rset->getDouble("Discount"));
+//            string orderId = rset->getString("order_id");
+//            cout << "";
         }
         while (allOrders >= 1) {
+            string order =rset->getString("order_id");
             PreparedStatement *pstmtBooks = con->prepareStatement(
                     "SELECT * FROM Bookstore.books_in_order INNER JOIN Book where Book.ISBN = books_in_order.books_id and order_id = ?");
             pstmtBooks->setString(1,rset->getString("order_id"));
@@ -182,11 +184,12 @@ public:
                 pstmtBookPrice->setString(1,rsetBooks->getString("ISBN"));
                 ResultSet *rsetBookPrice = pstmtBookPrice->executeQuery();
                 rsetBookPrice->first();
-                float bookPrice = static_cast<float>(rsetBookPrice->getDouble("customer_price"));
-                float bookQuantity = static_cast<float>(rsetBooks->getDouble("quantity"));
+                int bookPrice = (rsetBookPrice->getInt("customer_price"));
+                int bookQuantity = (rsetBooks->getInt("quantity_in_order"));
                 float bookDiscount = static_cast<float>(rsetBooks->getDouble("global_discount"));
                 float tempMoney = 0;
                 moneySaved += (bookPrice * bookQuantity) - bookPrice * bookQuantity * bookDiscount;
+                realValue += bookPrice * bookQuantity;
                 delete pstmtBookPrice;
                 delete rsetBookPrice;
                 allBooks--;
@@ -196,12 +199,23 @@ public:
             allOrders--;
             delete pstmtBooks;
             delete rsetBooks;
+            PreparedStatement *Order = con->prepareStatement("select * FROM Bookstore.Orders where Orders.idOrder = ?");
+            Order->setString(1,order);
+            ResultSet *OrderRes = Order->executeQuery();
+            OrderRes->first();
+            int moneyPaid = OrderRes->getInt("TotalPrice");
+            moneySaved = realValue - moneyPaid;
+            delete Order;
+            delete OrderRes;
         }
+
+        cout << "-------------------------------------" << endl;
+        cout << "Customer: " << ssn << " saved: " << moneySaved << "$ on his orders in our store since: " << start << endl;
+        cout << "-------------------------------------" << endl;
+
         delete pstmt;
         delete rset;
         delete con;
-        moneySaved = moneySaved * customerDiscount;
-        cout << moneySaved << endl;
     }
 };
 
