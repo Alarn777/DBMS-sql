@@ -154,7 +154,7 @@ public:
     }
     void moneySavedBySpecificCustomer(string& ssn,string& start){
         Database &db = Database::getInstance();
-        int moneySaved = 0,customerDiscount = 1;
+        float moneySaved = 0,customerDiscount = 1.0;
         Connection *con = db.getConnection();
         PreparedStatement *pstmt = con->prepareStatement(
                 "SELECT * FROM Bookstore.Customer INNER JOIN customer_order where customer_order.customer_id = Customer.SSN and customer_id = ?");
@@ -165,24 +165,27 @@ public:
         if(rset->rowsCount() >=1)
         {
             customerDiscount = rset->getInt("Discount");
+            double temp = static_cast<float>(rset->getDouble("Discount"));
+            string orderId = rset->getString("order_id");
+            cout << "";
         }
         while (allOrders >= 1) {
             PreparedStatement *pstmtBooks = con->prepareStatement(
                     "SELECT * FROM Bookstore.books_in_order INNER JOIN Book where Book.ISBN = books_in_order.books_id and order_id = ?");
-            pstmt->setString(1,rset->getString("order_id"));
-            ResultSet *rsetBooks = pstmt->executeQuery();
+            pstmtBooks->setString(1,rset->getString("order_id"));
+            ResultSet *rsetBooks = pstmtBooks->executeQuery();
+            size_t allBooks = rsetBooks->rowsCount();
             rsetBooks->first();
-            size_t allBooks = rset->rowsCount();
             while(allBooks >=1)
             {
                 PreparedStatement *pstmtBookPrice = con->prepareStatement("select * FROM Bookstore.Book INNER JOIN book_price where Book.ISBN = Book_price.idbook and ISBN = ?");
-                        pstmt->setString(1,rset->getString("ISBN"));
-                ResultSet *rsetBookPrice = pstmt->executeQuery();
+                pstmtBookPrice->setString(1,rsetBooks->getString("ISBN"));
+                ResultSet *rsetBookPrice = pstmtBookPrice->executeQuery();
                 rsetBookPrice->first();
-                int bookPrice = rsetBookPrice->getInt("customer_price");
-                int bookQuantity = rsetBooks->getInt("quantity");
-                int bookDiscount = rsetBooks->getInt("global_discount");
-                int tempMoney = 0;
+                float bookPrice = static_cast<float>(rsetBookPrice->getDouble("customer_price"));
+                float bookQuantity = static_cast<float>(rsetBooks->getDouble("quantity"));
+                float bookDiscount = static_cast<float>(rsetBooks->getDouble("global_discount"));
+                float tempMoney = 0;
                 moneySaved += (bookPrice * bookQuantity) - bookPrice * bookQuantity * bookDiscount;
                 delete pstmtBookPrice;
                 delete rsetBookPrice;

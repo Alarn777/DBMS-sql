@@ -2,6 +2,7 @@
 // Created by Michael Rokitko on 12/06/2018.
 //
 #include <iostream>
+#include <sstream>
 #include <cstdlib>
 #include "menu.h"
 #include "Book.h"
@@ -9,6 +10,7 @@
 #include "Customer.h"
 #include "Supplier.h"
 using namespace std;
+void clearCin();
 int main()
 {
     Store MyStore;
@@ -36,16 +38,14 @@ int main()
 //    myCustomer.maxBooksBought();
 //    mySupplier.maximumBooksProvided(start);
 //    MyOrder.checkAllOrdersBetween(startBookOredredByCustomerSince,end);
-//    MyOrder.checkAllCompletedOrdersBetween(startBookOredredByCustomerSince,end);
+    MyOrder.checkAllCompletedOrdersBetween(startBookOredredByCustomerSince,end);
     string moneySavedSSN = "824241642";
-    myCustomer.moneySavedBySpecificCustomer(moneySavedSSN,start);
+//    myCustomer.moneySavedBySpecificCustomer(moneySavedSSN,start);
 
 
 
-
-
-//    int userChoise = -1;
-//    int endProg = 23;
+    int userChoise = -1;
+    int endProg = 23;
 //    string start,end;
 //    Store MyStore;
 //    Book MyBook;
@@ -54,6 +54,7 @@ int main()
 //    Supplier mySupplier;
 //    while (userChoise != 23) {
 //        userChoise = menu(endProg);
+//        char input[100] = {};
 //        switch (userChoise) {
 //            case 1:{
 //                MyBook.showAllBooksInStore();
@@ -89,8 +90,15 @@ int main()
 //            case 7:{
 //                cout << "Please enter book name:" << endl;
 //                cin.clear();
-//                fflush(stdin);
-//                cin >> bookName;
+////                cin.ignore(INT_MAX);
+////                fflush(stdin);
+////                string numnber;
+//                clearCin();
+//                getline(cin, bookName);
+////                int n;
+////                stringstream numberline(numnber);
+////                numberline >> n;
+//
 //                MyBook.checkIfInStorage(bookName);
 //                break;
 //            }
@@ -144,5 +152,9 @@ int main()
 
 
 
-
+void clearCin()
+{
+    string temp;
+    getline(cin, temp);
+}
 
