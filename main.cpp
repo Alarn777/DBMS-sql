@@ -40,9 +40,10 @@ int main()
 //    MyOrder.checkAllOrdersBetween(startBookOredredByCustomerSince,end);
 //    MyOrder.checkAllCompletedOrdersBetween(startBookOredredByCustomerSince,end);
     string moneySavedSSN = "824241642";
-    myCustomer.moneySavedBySpecificCustomer(moneySavedSSN,start);
-
-
+//    myCustomer.moneySavedBySpecificCustomer(moneySavedSSN,start);
+//    myCustomer.showAllCustomersInStore();
+    string yearMoney = "2018";
+    MyStore.showYearlyEarning(yearMoney);
 
     int userChoise = -1;
     int endProg = 23;

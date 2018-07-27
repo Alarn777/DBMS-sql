@@ -30,6 +30,7 @@ public:
                 fullName->first();
                 cout << "First Name: " + fullName->getString("FName") << endl;
                 cout << "Last Name: " + fullName->getString("LName") << endl;
+                cout << "Joined on: " + rset->getString("date_joined") << endl;
             } else {
                 cerr << "No Such Customer Found!" << endl;
             }
@@ -130,8 +131,6 @@ public:
                         maxCount[1] = rset->getInt("SSN");
                         rset->next();
                     }
-
-
         }
         pstmt = con->prepareStatement("SELECT * FROM Bookstore.Customer INNER JOIN FullName where Customer.SSN = FullName.SSN and Customer.SSN = ?");
         pstmt->setString(1,to_string(maxCount[1]));
@@ -143,10 +142,6 @@ public:
             cout << "Customer: " << rset->getString("FName") << " " << rset->getString("LName")  << " bought " << maxCount[0] << " books. Which is the maximum in our store!" << endl;
             cout << "-------------------------------------" << endl;
         }
-
-
-
-
 
         delete pstmt;
         delete rset;
