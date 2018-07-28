@@ -158,13 +158,6 @@ public:
         ResultSet *rset = pstmt->executeQuery();
         rset->first();
         size_t allOrders = rset->rowsCount();
-        if(rset->rowsCount() >=1)
-        {
-            customerDiscount = static_cast<float>(rset->getDouble("Discount"));
-//            double temp = static_cast<float>(rset->getDouble("Discount"));
-//            string orderId = rset->getString("order_id");
-//            cout << "";
-        }
         while (allOrders >= 1) {
             string order =rset->getString("order_id");
             PreparedStatement *pstmtBooks = con->prepareStatement(
@@ -181,9 +174,6 @@ public:
                 rsetBookPrice->first();
                 int bookPrice = (rsetBookPrice->getInt("customer_price"));
                 int bookQuantity = (rsetBooks->getInt("quantity_in_order"));
-                float bookDiscount = static_cast<float>(rsetBooks->getDouble("global_discount"));
-                float tempMoney = 0;
-//                moneySaved += (bookPrice * bookQuantity) - bookPrice * bookQuantity * bookDiscount;
                 realValue += bookPrice * bookQuantity;
                 delete pstmtBookPrice;
                 delete rsetBookPrice;

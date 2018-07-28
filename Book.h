@@ -24,8 +24,10 @@ public:
     void showAllBooksInStore() {
         Database &db = Database::getInstance();
         Connection *con = db.getConnection();
-        PreparedStatement *pstmt = con->prepareStatement(
-                "SELECT * FROM Book INNER JOIN  book_price ON book_price.idbook = Book.ISBN");
+        PreparedStatement *pstmt = con->prepareStatement("SELECT * FROM Book as h1 INNER JOIN  book_price as h2 \n"
+                                                                 "\tON h1.ISBN = h2.idbook \n"
+                                                                 "    inner JOIN Author as h3\n"
+                                                                 "    ON h2.idbook = h3.idBook");
         ResultSet *rset = pstmt->executeQuery();
         rset->first();
         size_t allBooks = rset->rowsCount();
@@ -33,8 +35,9 @@ public:
             cout << "-------------------------------------" << endl;
             cout << "ISBN: " + rset->getString("ISBN") << endl;
             cout << "Book Name: " + rset->getString("book_name") << endl;
-            cout << "Price per unit for Customer: " + rset->getString("customer_price") << endl;
-            cout << "Price per unit to Resupply: " + rset->getString("real_price") << endl;
+            cout << "Author: " + rset->getString("FName") << " " << rset->getString("LNAme") << endl;
+            cout << "Price per unit for Customer: " + rset->getString("customer_price") << "$" << endl;
+            cout << "Price per unit to Resupply: " + rset->getString("real_price") << "$" << endl;
             cout << "Quantity: " + rset->getString("Quantity") << endl;
             cout << "-------------------------------------" << endl;
             rset->next();
@@ -168,27 +171,32 @@ public:
 
     void topTenBookBetween(string& start,string& end)
     {
-
-
-//        SELECT books_id,quantity_in_order FROM Bookstore.Orders as h1 INNER JOIN books_in_order
-//        where h1.idOrder = books_in_order.order_id and h1.status = 'Closed'
-
-
-        PreparedStatement *pstmtOrder = con->prepareStatement(
-                "SELECT * FROM Bookstore.orders INNER JOIN books_in_order where orders.idOrder =  books_in_order.order_id and orders.date > ? and books_in_order.books_id = ?");
-        pstmtOrder->setString(1, start);
-        pstmtOrder->setString(2, rset->getString("ISBN"));
-        ResultSet *rsetOrder = pstmtOrder->executeQuery();
-        rsetOrder->first();
-        size_t allOrder = rsetOrder->rowsCount();
-        while (allOrder >= 1) {
-
-
-
-
-
-
-
+        Database &db = Database::getInstance();
+        Connection *con = db.getConnection();
+        PreparedStatement *pstmt = con->prepareStatement(
+                " SELECT books_id,SUM(quantity_in_order) FROM Bookstore.Orders as h1 INNER JOIN books_in_order\n"
+                        "        where h1.idOrder = books_in_order.order_id and h1.status = 'Closed'\n"
+                        "        and date between ? and ?\n"
+                        "        group by books_id ORDER BY SUM(quantity_in_order) DESC ");
+        pstmt->setString(1, start);
+        pstmt->setString(2, end);
+        ResultSet *rset = pstmt->executeQuery();
+        rset->first();
+        size_t all = rset->rowsCount();
+        cout << "Top 10 Book Sold between " + start + " and " + end + ":" << endl;
+        cout << "-------------------------------------" << endl;
+        int i = 1;
+        while (all >= 1) {
+            PreparedStatement *pstmtBook = con->prepareStatement(
+                    " SELECT book_name FROM Book WHERE ISBN = ?");
+            pstmtBook->setString(1, rset->getString("books_id"));
+            ResultSet *rsetBooks = pstmtBook->executeQuery();
+            rsetBooks->first();
+            cout << i << ":" << rsetBooks->getString("book_name") << " sold " << rset->getString("SUM(quantity_in_order)") << " times" << endl;
+            rset->next();
+            all--;
+            i++;
+        }
         delete pstmt;
         delete rset;
         delete con;

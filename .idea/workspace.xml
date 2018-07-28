@@ -12,14 +12,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2bc030fa-d21f-4649-a56e-cef5b5022c63" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/DBMS-sql.dir/main.cpp.o" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/DBMS-sql.dir/main.cpp.o" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/DBMS-sql" afterPath="$PROJECT_DIR$/cmake-build-debug/DBMS-sql" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/DBMS-sql.dir/main.cpp.o" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/DBMS-sql" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Book.h" afterPath="$PROJECT_DIR$/Book.h" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Customer.h" afterPath="$PROJECT_DIR$/Customer.h" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Store.h" afterPath="$PROJECT_DIR$/Store.h" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Supplier.h" afterPath="$PROJECT_DIR$/Supplier.h" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/main.cpp" afterPath="$PROJECT_DIR$/main.cpp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/menu.h" afterPath="$PROJECT_DIR$/menu.h" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -31,14 +30,13 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="main.cpp" pinned="false" current-in-tab="false">
+      <file leaf-file-name="main.cpp" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/main.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="258">
-              <caret line="54" column="0" lean-forward="true" selection-start-line="54" selection-start-column="0" selection-end-line="54" selection-end-column="0" />
+            <state relative-caret-position="90">
+              <caret line="6" column="19" lean-forward="false" selection-start-line="6" selection-start-column="19" selection-end-line="6" selection-end-column="19" />
               <folding>
-                <element signature="e#51#70#0" expanded="true" />
-                <marker date="1532748103524" expanded="true" signature="1325:1479" ph="..." />
+                <marker date="1532787867734" expanded="true" signature="1368:1522" ph="..." />
               </folding>
             </state>
           </provider>
@@ -47,52 +45,28 @@
       <file leaf-file-name="Customer.h" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Customer.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1543">
-              <caret line="109" column="94" lean-forward="true" selection-start-line="109" selection-start-column="68" selection-end-line="109" selection-end-column="94" />
+            <state relative-caret-position="-95">
+              <caret line="102" column="23" lean-forward="false" selection-start-line="102" selection-start-column="9" selection-end-line="102" selection-end-column="23" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Book.h" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Book.h" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Book.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="106">
-              <caret line="176" column="24" lean-forward="true" selection-start-line="176" selection-start-column="24" selection-end-line="176" selection-end-column="24" />
+            <state relative-caret-position="200">
+              <caret line="18" column="7" lean-forward="true" selection-start-line="18" selection-start-column="7" selection-end-line="18" selection-end-column="7" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Store.h" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Store.h">
+      <file leaf-file-name="menu.h" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/menu.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="8" column="0" lean-forward="true" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
-              <folding>
-                <element signature="e#102#123#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Supplier.h" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Supplier.h">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="212">
-              <caret line="133" column="39" lean-forward="true" selection-start-line="133" selection-start-column="39" selection-end-line="133" selection-end-column="39" />
-              <folding>
-                <element signature="e#109#130#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Order.h" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Order.h">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="40">
-              <caret line="13" column="7" lean-forward="true" selection-start-line="13" selection-start-column="7" selection-end-line="13" selection-end-column="7" />
+            <state relative-caret-position="-11">
+              <caret line="43" column="9" lean-forward="true" selection-start-line="43" selection-start-column="9" selection-end-line="43" selection-end-column="9" />
               <folding />
             </state>
           </provider>
@@ -114,6 +88,11 @@
       <find>moneySaved</find>
       <find>showAllCustomersInStore</find>
       <find>SSN</find>
+      <find>tempmoney</find>
+      <find>moneySavedBySpecificCustomer</find>
+      <find>money</find>
+      <find>OrderRes</find>
+      <find>max</find>
     </findStrings>
     <replaceStrings>
       <replace />
@@ -135,13 +114,13 @@
         <option value="$PROJECT_DIR$/Database.cpp" />
         <option value="$PROJECT_DIR$/Database.h" />
         <option value="$PROJECT_DIR$/Store.cpp" />
-        <option value="$PROJECT_DIR$/menu.h" />
         <option value="$PROJECT_DIR$/Order.h" />
-        <option value="$PROJECT_DIR$/Customer.h" />
         <option value="$PROJECT_DIR$/Supplier.h" />
         <option value="$PROJECT_DIR$/Store.h" />
-        <option value="$PROJECT_DIR$/Book.h" />
+        <option value="$PROJECT_DIR$/Customer.h" />
+        <option value="$PROJECT_DIR$/menu.h" />
         <option value="$PROJECT_DIR$/main.cpp" />
+        <option value="$PROJECT_DIR$/Book.h" />
       </list>
     </option>
   </component>
@@ -243,7 +222,7 @@
       <workItem from="1532590949858" duration="3310000" />
       <workItem from="1532601957329" duration="6063000" />
       <workItem from="1532693355375" duration="7503000" />
-      <workItem from="1532727606828" duration="6786000" />
+      <workItem from="1532727606828" duration="12932000" />
     </task>
     <task id="LOCAL-00001" summary="Show All Books Working">
       <created>1532182898379</created>
@@ -343,11 +322,18 @@
       <option name="project" value="LOCAL" />
       <updated>1532705140449</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="Options : 1-19 Working&#10;Fixed remarks a-b-c.&#10;Menu working.">
+      <created>1532748292321</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1532748292321</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="87605000" />
+    <option name="totallyTimeSpent" value="93751000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1280" height="730" extended-state="0" />
@@ -410,18 +396,12 @@
     <MESSAGE value="Options : 1-13 Working&#10;Fixed remarks a-b-c.&#10;Menu working." />
     <MESSAGE value="Options : 1-14 Working&#10;Fixed remarks a-b-c.&#10;Menu working." />
     <MESSAGE value="Options : 1-16 Working&#10;Fixed remarks a-b-c.&#10;Menu working." />
-    <option name="LAST_COMMIT_MESSAGE" value="Options : 1-16 Working&#10;Fixed remarks a-b-c.&#10;Menu working." />
+    <MESSAGE value="Options : 1-19 Working&#10;Fixed remarks a-b-c.&#10;Menu working." />
+    <option name="LAST_COMMIT_MESSAGE" value="Options : 1-19 Working&#10;Fixed remarks a-b-c.&#10;Menu working." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
-          <url>file://$PROJECT_DIR$/main.cpp</url>
-          <line>50</line>
-          <option name="timeStamp" value="66" />
-        </line-breakpoint>
-      </breakpoints>
-      <option name="time" value="67" />
+      <option name="time" value="68" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -449,8 +429,7 @@
         <state relative-caret-position="495">
           <caret line="33" column="60" lean-forward="false" selection-start-line="33" selection-start-column="60" selection-end-line="33" selection-end-column="60" />
           <folding>
-            <element signature="e#51#70#0" expanded="true" />
-            <marker date="1532748103524" expanded="true" signature="1325:1479" ph="..." />
+            <marker date="1532787867734" expanded="true" signature="1368:1522" ph="..." />
           </folding>
         </state>
       </provider>
@@ -468,8 +447,7 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#51#70#0" expanded="true" />
-            <marker date="1532748103524" expanded="true" signature="1325:1479" ph="..." />
+            <marker date="1532787867734" expanded="true" signature="1368:1522" ph="..." />
           </folding>
         </state>
       </provider>
@@ -494,8 +472,7 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#51#70#0" expanded="true" />
-            <marker date="1532748103524" expanded="true" signature="1325:1479" ph="..." />
+            <marker date="1532787867734" expanded="true" signature="1368:1522" ph="..." />
           </folding>
         </state>
       </provider>
@@ -534,8 +511,7 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#51#70#0" expanded="true" />
-            <marker date="1532748103524" expanded="true" signature="1325:1479" ph="..." />
+            <marker date="1532787867734" expanded="true" signature="1368:1522" ph="..." />
           </folding>
         </state>
       </provider>
@@ -574,8 +550,7 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#51#70#0" expanded="true" />
-            <marker date="1532748103524" expanded="true" signature="1325:1479" ph="..." />
+            <marker date="1532787867734" expanded="true" signature="1368:1522" ph="..." />
           </folding>
         </state>
       </provider>
@@ -614,8 +589,7 @@
         <state relative-caret-position="90">
           <caret line="6" column="20" lean-forward="false" selection-start-line="6" selection-start-column="20" selection-end-line="6" selection-end-column="20" />
           <folding>
-            <element signature="e#51#70#0" expanded="true" />
-            <marker date="1532748103524" expanded="true" signature="1325:1479" ph="..." />
+            <marker date="1532787867734" expanded="true" signature="1368:1522" ph="..." />
           </folding>
         </state>
       </provider>
@@ -740,14 +714,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/menu.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="40" column="77" lean-forward="false" selection-start-line="40" selection-start-column="77" selection-end-line="40" selection-end-column="77" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file:///usr/local/include/cppconn/sqlstring.h">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="840">
@@ -756,58 +722,65 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Order.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="40">
-          <caret line="13" column="7" lean-forward="true" selection-start-line="13" selection-start-column="7" selection-end-line="13" selection-end-column="7" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Supplier.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="212">
-          <caret line="133" column="39" lean-forward="true" selection-start-line="133" selection-start-column="39" selection-end-line="133" selection-end-column="39" />
-          <folding>
-            <element signature="e#109#130#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Store.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="0" lean-forward="true" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+        <state relative-caret-position="57">
+          <caret line="88" column="13" lean-forward="true" selection-start-line="88" selection-start-column="13" selection-end-line="88" selection-end-column="13" />
           <folding>
             <element signature="e#102#123#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/main.cpp">
+    <entry file="file://$PROJECT_DIR$/Supplier.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="258">
-          <caret line="54" column="0" lean-forward="true" selection-start-line="54" selection-start-column="0" selection-end-line="54" selection-end-column="0" />
+        <state relative-caret-position="129">
+          <caret line="134" column="35" lean-forward="false" selection-start-line="134" selection-start-column="35" selection-end-line="134" selection-end-column="35" />
           <folding>
-            <element signature="e#51#70#0" expanded="true" />
-            <marker date="1532748103524" expanded="true" signature="1325:1479" ph="..." />
+            <element signature="e#109#130#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Order.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="22" column="31" lean-forward="true" selection-start-line="22" selection-start-column="31" selection-end-line="22" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/menu.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-11">
+          <caret line="43" column="9" lean-forward="true" selection-start-line="43" selection-start-column="9" selection-end-line="43" selection-end-column="9" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Customer.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1543">
-          <caret line="109" column="94" lean-forward="true" selection-start-line="109" selection-start-column="68" selection-end-line="109" selection-end-column="94" />
+        <state relative-caret-position="-95">
+          <caret line="102" column="23" lean-forward="false" selection-start-line="102" selection-start-column="9" selection-end-line="102" selection-end-column="23" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Book.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="106">
-          <caret line="176" column="24" lean-forward="true" selection-start-line="176" selection-start-column="24" selection-end-line="176" selection-end-column="24" />
+        <state relative-caret-position="200">
+          <caret line="18" column="7" lean-forward="true" selection-start-line="18" selection-start-column="7" selection-end-line="18" selection-end-column="7" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="19" lean-forward="false" selection-start-line="6" selection-start-column="19" selection-end-line="6" selection-end-column="19" />
+          <folding>
+            <marker date="1532787867734" expanded="true" signature="1368:1522" ph="..." />
+          </folding>
         </state>
       </provider>
     </entry>

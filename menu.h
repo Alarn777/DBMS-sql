@@ -39,7 +39,7 @@ int menu(int& menueEnd) {
 
         cout << "To clean screen press                                         22" << endl;
         cout << "To Exit press                                                 23" << endl;
-        cout << "--------------------------------------------" << endl;
+        cout << "----------------------------------------------------------------" << endl;
         do                                                  //protection from wrong intput
         {
             cin >> decision;
