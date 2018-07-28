@@ -2,9 +2,6 @@
 // Created by Michael Rokitko on 12/06/2018.
 //
 #include <iostream>
-#include <sstream>
-#include <cstdlib>
-#include <stdlib.h>
 #include "menu.h"
 #include "Book.h"
 #include "Order.h"
@@ -178,14 +175,14 @@ int main()
                 break;
             }
             case 15:{
+                cout << "Please enter customer ssn" << endl;
+                cin.clear();
+                clearCin();
+                cin >> ssn;
                 cout << "Please enter start date ****-**-**" << endl;
                 cin.clear();
                 clearCin();
                 cin >> start;
-                cout << "Please enter start date ****-**-**" << endl;
-                cin.clear();
-                clearCin();
-                cin >> ssn;
                 myCustomer.moneySavedBySpecificCustomer(ssn,start);
                 break;
             }
