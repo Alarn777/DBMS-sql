@@ -113,6 +113,39 @@ public:
         delete rset;
         delete con;
     }
+    void allDealsWithSupplier(string& id_supplier,string& start,string& end)  //expects ID of a supplier
+    {
+        int money_spent = 0;
+        Database &db = Database::getInstance();
+        Connection *con = db.getConnection();
+        PreparedStatement *pstmt = con->prepareStatement("SELECT * FROM Bookstore.resupply where date_time between ? and ? and status = 'supplied' and supplier_id = ?");
+        pstmt->setString(1, start);
+        pstmt->setString(2, end);
+        pstmt->setString(3, id_supplier);
+        ResultSet *rset = pstmt->executeQuery();
+        rset->first();
+
+        size_t all = rset->rowsCount();
+        while (all >= 1) {
+            money_spent += rset->getInt("total_price");
+            rset->next();
+            all--;
+        }
+        cout << "-------------------------------------" << endl;
+        cout << "Total money paid to supplier with ID: " << id_supplier << " between: " << start << " and " << end << " is: " << money_spent << "$" << endl;
+        cout << "-------------------------------------" << endl;
+
+
+
+
+
+
+
+
+
+
+
+    }
 };
 
 

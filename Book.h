@@ -166,6 +166,33 @@ public:
         delete con;
     }
 
+    void topTenBookBetween(string& start,string& end)
+    {
+
+
+//        SELECT books_id,quantity_in_order FROM Bookstore.Orders as h1 INNER JOIN books_in_order
+//        where h1.idOrder = books_in_order.order_id and h1.status = 'Closed'
+
+
+        PreparedStatement *pstmtOrder = con->prepareStatement(
+                "SELECT * FROM Bookstore.orders INNER JOIN books_in_order where orders.idOrder =  books_in_order.order_id and orders.date > ? and books_in_order.books_id = ?");
+        pstmtOrder->setString(1, start);
+        pstmtOrder->setString(2, rset->getString("ISBN"));
+        ResultSet *rsetOrder = pstmtOrder->executeQuery();
+        rsetOrder->first();
+        size_t allOrder = rsetOrder->rowsCount();
+        while (allOrder >= 1) {
+
+
+
+
+
+
+
+        delete pstmt;
+        delete rset;
+        delete con;
+    }
 private:
 
 };

@@ -95,6 +95,28 @@ public:
         }
         delete con;
     }
+    void checkSalesOfAnEmployee(string& id,string& start,string& end)
+    {
+        Database &db = Database::getInstance();
+        Connection *con = db.getConnection();
+        PreparedStatement *pstmt = con->prepareStatement("SELECT * FROM Bookstore.employee as h1 INNER JOIN employee_sales as h2\n"
+                                                                 "\ton h1.id_employee = h2.employee_id\n"
+                                                                 "\tINNER JOIN orders as h3 \n"
+                                                                 "    on h2.order_id = h3.idOrder where id_employee = ? and date between ? and ? and status = 'Closed'");
+        pstmt->setString(1, id);
+        pstmt->setString(2, start);
+        pstmt->setString(3, end);
+
+        ResultSet *rset = pstmt->executeQuery();
+        rset->first();
+        size_t deals =  rset->rowsCount();
+        cout << "-------------------------------------" << endl;
+        cout << "Employee with id: " + id + " closed " << deals << " orders between " << start  << " and " << end <<  endl;
+        cout << "-------------------------------------" << endl;
+        delete pstmt;
+        delete rset;
+        delete con;
+    }
 
     ~Store() {}
 private:

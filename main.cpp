@@ -29,7 +29,7 @@ int main()
 //    MyBook.checkIfInStorage(BookWow);                         //gives error
 //    mySupplier.checkAllSuppliersOfABook(bookName);
     string start = "2018-03-12";                                //change 03 to 06 to see changes in "booksSoldFrom" function
-    string end = "2018-10-12 10:34:09";
+    string end = "2018-10-12";
 //    MyBook.booksSoldFrom(start,bookName);
 //    MyStore.showAllTransactions(start,end);
     string ssn = "676128868";
@@ -43,7 +43,18 @@ int main()
 //    myCustomer.moneySavedBySpecificCustomer(moneySavedSSN,start);
 //    myCustomer.showAllCustomersInStore();
     string yearMoney = "2018";
-    MyStore.showYearlyEarning(yearMoney);
+//    MyStore.showYearlyEarning(yearMoney);
+//    myCustomer.newCustomersSince(start);
+    string id_supplier = "1513";
+//    mySupplier.allDealsWithSupplier(id_supplier,start,end);
+    string id = "3";
+    MyStore.checkSalesOfAnEmployee(id,start,end);
+    MyBook.topTenBookBetween(start,end);
+
+
+
+
+
 
     int userChoise = -1;
     int endProg = 23;

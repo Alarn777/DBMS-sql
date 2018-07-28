@@ -213,6 +213,32 @@ public:
         delete rset;
         delete con;
     }
+    void newCustomersSince(string& start)
+    {
+        Database &db = Database::getInstance();
+        int moneySaved = 0,realValue = 0;
+        float customerDiscount = 1.0;
+        Connection *con = db.getConnection();
+        PreparedStatement *pstmt = con->prepareStatement(
+                "SELECT * FROM Bookstore.Customer JOIN FullName where date_joined > ? and Customer.SSN = FullName.SSN;");
+        pstmt->setString(1,start);
+        ResultSet *rset = pstmt->executeQuery();
+        rset->first();
+        size_t all = rset->rowsCount();
+        cout << "-------------------------------------" << endl;
+        cout << "Joined since " + start + ":"<< endl;
+        while(all > 0 )
+        {
+            cout << "-------------------------------------" << endl;
+            cout << "Full Name: " << rset->getString("FName") << " " << rset->getString("LName") << endl;
+            cout << "Date joined: " << rset->getString("date_joined") << endl;
+            all--;
+            rset->next();
+        }
+        delete pstmt;
+        delete rset;
+        delete con;
+    }
 };
 
 
