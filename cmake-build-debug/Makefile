@@ -123,60 +123,6 @@ DBMS-sql/fast:
 	$(MAKE) -f CMakeFiles/DBMS-sql.dir/build.make CMakeFiles/DBMS-sql.dir/build
 .PHONY : DBMS-sql/fast
 
-Book.o: Book.cpp.o
-
-.PHONY : Book.o
-
-# target to build an object file
-Book.cpp.o:
-	$(MAKE) -f CMakeFiles/DBMS-sql.dir/build.make CMakeFiles/DBMS-sql.dir/Book.cpp.o
-.PHONY : Book.cpp.o
-
-Book.i: Book.cpp.i
-
-.PHONY : Book.i
-
-# target to preprocess a source file
-Book.cpp.i:
-	$(MAKE) -f CMakeFiles/DBMS-sql.dir/build.make CMakeFiles/DBMS-sql.dir/Book.cpp.i
-.PHONY : Book.cpp.i
-
-Book.s: Book.cpp.s
-
-.PHONY : Book.s
-
-# target to generate assembly for a file
-Book.cpp.s:
-	$(MAKE) -f CMakeFiles/DBMS-sql.dir/build.make CMakeFiles/DBMS-sql.dir/Book.cpp.s
-.PHONY : Book.cpp.s
-
-Customer.o: Customer.cpp.o
-
-.PHONY : Customer.o
-
-# target to build an object file
-Customer.cpp.o:
-	$(MAKE) -f CMakeFiles/DBMS-sql.dir/build.make CMakeFiles/DBMS-sql.dir/Customer.cpp.o
-.PHONY : Customer.cpp.o
-
-Customer.i: Customer.cpp.i
-
-.PHONY : Customer.i
-
-# target to preprocess a source file
-Customer.cpp.i:
-	$(MAKE) -f CMakeFiles/DBMS-sql.dir/build.make CMakeFiles/DBMS-sql.dir/Customer.cpp.i
-.PHONY : Customer.cpp.i
-
-Customer.s: Customer.cpp.s
-
-.PHONY : Customer.s
-
-# target to generate assembly for a file
-Customer.cpp.s:
-	$(MAKE) -f CMakeFiles/DBMS-sql.dir/build.make CMakeFiles/DBMS-sql.dir/Customer.cpp.s
-.PHONY : Customer.cpp.s
-
 Database.o: Database.cpp.o
 
 .PHONY : Database.o
@@ -203,87 +149,6 @@ Database.s: Database.cpp.s
 Database.cpp.s:
 	$(MAKE) -f CMakeFiles/DBMS-sql.dir/build.make CMakeFiles/DBMS-sql.dir/Database.cpp.s
 .PHONY : Database.cpp.s
-
-Order.o: Order.cpp.o
-
-.PHONY : Order.o
-
-# target to build an object file
-Order.cpp.o:
-	$(MAKE) -f CMakeFiles/DBMS-sql.dir/build.make CMakeFiles/DBMS-sql.dir/Order.cpp.o
-.PHONY : Order.cpp.o
-
-Order.i: Order.cpp.i
-
-.PHONY : Order.i
-
-# target to preprocess a source file
-Order.cpp.i:
-	$(MAKE) -f CMakeFiles/DBMS-sql.dir/build.make CMakeFiles/DBMS-sql.dir/Order.cpp.i
-.PHONY : Order.cpp.i
-
-Order.s: Order.cpp.s
-
-.PHONY : Order.s
-
-# target to generate assembly for a file
-Order.cpp.s:
-	$(MAKE) -f CMakeFiles/DBMS-sql.dir/build.make CMakeFiles/DBMS-sql.dir/Order.cpp.s
-.PHONY : Order.cpp.s
-
-Store.o: Store.cpp.o
-
-.PHONY : Store.o
-
-# target to build an object file
-Store.cpp.o:
-	$(MAKE) -f CMakeFiles/DBMS-sql.dir/build.make CMakeFiles/DBMS-sql.dir/Store.cpp.o
-.PHONY : Store.cpp.o
-
-Store.i: Store.cpp.i
-
-.PHONY : Store.i
-
-# target to preprocess a source file
-Store.cpp.i:
-	$(MAKE) -f CMakeFiles/DBMS-sql.dir/build.make CMakeFiles/DBMS-sql.dir/Store.cpp.i
-.PHONY : Store.cpp.i
-
-Store.s: Store.cpp.s
-
-.PHONY : Store.s
-
-# target to generate assembly for a file
-Store.cpp.s:
-	$(MAKE) -f CMakeFiles/DBMS-sql.dir/build.make CMakeFiles/DBMS-sql.dir/Store.cpp.s
-.PHONY : Store.cpp.s
-
-Supplier.o: Supplier.cpp.o
-
-.PHONY : Supplier.o
-
-# target to build an object file
-Supplier.cpp.o:
-	$(MAKE) -f CMakeFiles/DBMS-sql.dir/build.make CMakeFiles/DBMS-sql.dir/Supplier.cpp.o
-.PHONY : Supplier.cpp.o
-
-Supplier.i: Supplier.cpp.i
-
-.PHONY : Supplier.i
-
-# target to preprocess a source file
-Supplier.cpp.i:
-	$(MAKE) -f CMakeFiles/DBMS-sql.dir/build.make CMakeFiles/DBMS-sql.dir/Supplier.cpp.i
-.PHONY : Supplier.cpp.i
-
-Supplier.s: Supplier.cpp.s
-
-.PHONY : Supplier.s
-
-# target to generate assembly for a file
-Supplier.cpp.s:
-	$(MAKE) -f CMakeFiles/DBMS-sql.dir/build.make CMakeFiles/DBMS-sql.dir/Supplier.cpp.s
-.PHONY : Supplier.cpp.s
 
 main.o: main.cpp.o
 
@@ -321,24 +186,9 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... DBMS-sql"
-	@echo "... Book.o"
-	@echo "... Book.i"
-	@echo "... Book.s"
-	@echo "... Customer.o"
-	@echo "... Customer.i"
-	@echo "... Customer.s"
 	@echo "... Database.o"
 	@echo "... Database.i"
 	@echo "... Database.s"
-	@echo "... Order.o"
-	@echo "... Order.i"
-	@echo "... Order.s"
-	@echo "... Store.o"
-	@echo "... Store.i"
-	@echo "... Store.s"
-	@echo "... Supplier.o"
-	@echo "... Supplier.i"
-	@echo "... Supplier.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

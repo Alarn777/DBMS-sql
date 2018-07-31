@@ -12,10 +12,10 @@ Database::Database() : driver(get_driver_instance()) {
 	// use database
 	try {
 		Connection *con = driver->connect(connection_properties);
-//		try {
-//			con->setSchema(DB_NAME);
-//		}
-//		catch (SQLException &e) {
+		try {
+			con->setSchema(DB_NAME);
+		}
+		catch (SQLException &e) {
 //			Statement *stmt = con->createStatement();
 //			string q = "CREATE DATABASE IF NOT EXISTS ";
 //			q.append(DB_NAME);
@@ -83,9 +83,9 @@ Database::Database() : driver(get_driver_instance()) {
 //				"ON DELETE RESTRICT "
 //				"ON UPDATE RESTRICT, "
 //				"CHECK(end_date > start_date))");
-//
+
 //			delete stmt;
-//		}
+		}
 
 		delete con;
 	}

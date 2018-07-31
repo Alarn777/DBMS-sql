@@ -105,149 +105,19 @@ CMakeFiles/DBMS-sql.dir/Database.cpp.o.provides: CMakeFiles/DBMS-sql.dir/Databas
 CMakeFiles/DBMS-sql.dir/Database.cpp.o.provides.build: CMakeFiles/DBMS-sql.dir/Database.cpp.o
 
 
-CMakeFiles/DBMS-sql.dir/Book.cpp.o: CMakeFiles/DBMS-sql.dir/flags.make
-CMakeFiles/DBMS-sql.dir/Book.cpp.o: ../Book.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/michaelrokitko/Desktop/לימודים שנקר/nudler/DBMS-sql/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/DBMS-sql.dir/Book.cpp.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/DBMS-sql.dir/Book.cpp.o -c "/Users/michaelrokitko/Desktop/לימודים שנקר/nudler/DBMS-sql/Book.cpp"
-
-CMakeFiles/DBMS-sql.dir/Book.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/DBMS-sql.dir/Book.cpp.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/michaelrokitko/Desktop/לימודים שנקר/nudler/DBMS-sql/Book.cpp" > CMakeFiles/DBMS-sql.dir/Book.cpp.i
-
-CMakeFiles/DBMS-sql.dir/Book.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/DBMS-sql.dir/Book.cpp.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/michaelrokitko/Desktop/לימודים שנקר/nudler/DBMS-sql/Book.cpp" -o CMakeFiles/DBMS-sql.dir/Book.cpp.s
-
-CMakeFiles/DBMS-sql.dir/Book.cpp.o.requires:
-
-.PHONY : CMakeFiles/DBMS-sql.dir/Book.cpp.o.requires
-
-CMakeFiles/DBMS-sql.dir/Book.cpp.o.provides: CMakeFiles/DBMS-sql.dir/Book.cpp.o.requires
-	$(MAKE) -f CMakeFiles/DBMS-sql.dir/build.make CMakeFiles/DBMS-sql.dir/Book.cpp.o.provides.build
-.PHONY : CMakeFiles/DBMS-sql.dir/Book.cpp.o.provides
-
-CMakeFiles/DBMS-sql.dir/Book.cpp.o.provides.build: CMakeFiles/DBMS-sql.dir/Book.cpp.o
-
-
-CMakeFiles/DBMS-sql.dir/Order.cpp.o: CMakeFiles/DBMS-sql.dir/flags.make
-CMakeFiles/DBMS-sql.dir/Order.cpp.o: ../Order.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/michaelrokitko/Desktop/לימודים שנקר/nudler/DBMS-sql/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/DBMS-sql.dir/Order.cpp.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/DBMS-sql.dir/Order.cpp.o -c "/Users/michaelrokitko/Desktop/לימודים שנקר/nudler/DBMS-sql/Order.cpp"
-
-CMakeFiles/DBMS-sql.dir/Order.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/DBMS-sql.dir/Order.cpp.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/michaelrokitko/Desktop/לימודים שנקר/nudler/DBMS-sql/Order.cpp" > CMakeFiles/DBMS-sql.dir/Order.cpp.i
-
-CMakeFiles/DBMS-sql.dir/Order.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/DBMS-sql.dir/Order.cpp.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/michaelrokitko/Desktop/לימודים שנקר/nudler/DBMS-sql/Order.cpp" -o CMakeFiles/DBMS-sql.dir/Order.cpp.s
-
-CMakeFiles/DBMS-sql.dir/Order.cpp.o.requires:
-
-.PHONY : CMakeFiles/DBMS-sql.dir/Order.cpp.o.requires
-
-CMakeFiles/DBMS-sql.dir/Order.cpp.o.provides: CMakeFiles/DBMS-sql.dir/Order.cpp.o.requires
-	$(MAKE) -f CMakeFiles/DBMS-sql.dir/build.make CMakeFiles/DBMS-sql.dir/Order.cpp.o.provides.build
-.PHONY : CMakeFiles/DBMS-sql.dir/Order.cpp.o.provides
-
-CMakeFiles/DBMS-sql.dir/Order.cpp.o.provides.build: CMakeFiles/DBMS-sql.dir/Order.cpp.o
-
-
-CMakeFiles/DBMS-sql.dir/Customer.cpp.o: CMakeFiles/DBMS-sql.dir/flags.make
-CMakeFiles/DBMS-sql.dir/Customer.cpp.o: ../Customer.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/michaelrokitko/Desktop/לימודים שנקר/nudler/DBMS-sql/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/DBMS-sql.dir/Customer.cpp.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/DBMS-sql.dir/Customer.cpp.o -c "/Users/michaelrokitko/Desktop/לימודים שנקר/nudler/DBMS-sql/Customer.cpp"
-
-CMakeFiles/DBMS-sql.dir/Customer.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/DBMS-sql.dir/Customer.cpp.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/michaelrokitko/Desktop/לימודים שנקר/nudler/DBMS-sql/Customer.cpp" > CMakeFiles/DBMS-sql.dir/Customer.cpp.i
-
-CMakeFiles/DBMS-sql.dir/Customer.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/DBMS-sql.dir/Customer.cpp.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/michaelrokitko/Desktop/לימודים שנקר/nudler/DBMS-sql/Customer.cpp" -o CMakeFiles/DBMS-sql.dir/Customer.cpp.s
-
-CMakeFiles/DBMS-sql.dir/Customer.cpp.o.requires:
-
-.PHONY : CMakeFiles/DBMS-sql.dir/Customer.cpp.o.requires
-
-CMakeFiles/DBMS-sql.dir/Customer.cpp.o.provides: CMakeFiles/DBMS-sql.dir/Customer.cpp.o.requires
-	$(MAKE) -f CMakeFiles/DBMS-sql.dir/build.make CMakeFiles/DBMS-sql.dir/Customer.cpp.o.provides.build
-.PHONY : CMakeFiles/DBMS-sql.dir/Customer.cpp.o.provides
-
-CMakeFiles/DBMS-sql.dir/Customer.cpp.o.provides.build: CMakeFiles/DBMS-sql.dir/Customer.cpp.o
-
-
-CMakeFiles/DBMS-sql.dir/Store.cpp.o: CMakeFiles/DBMS-sql.dir/flags.make
-CMakeFiles/DBMS-sql.dir/Store.cpp.o: ../Store.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/michaelrokitko/Desktop/לימודים שנקר/nudler/DBMS-sql/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/DBMS-sql.dir/Store.cpp.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/DBMS-sql.dir/Store.cpp.o -c "/Users/michaelrokitko/Desktop/לימודים שנקר/nudler/DBMS-sql/Store.cpp"
-
-CMakeFiles/DBMS-sql.dir/Store.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/DBMS-sql.dir/Store.cpp.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/michaelrokitko/Desktop/לימודים שנקר/nudler/DBMS-sql/Store.cpp" > CMakeFiles/DBMS-sql.dir/Store.cpp.i
-
-CMakeFiles/DBMS-sql.dir/Store.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/DBMS-sql.dir/Store.cpp.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/michaelrokitko/Desktop/לימודים שנקר/nudler/DBMS-sql/Store.cpp" -o CMakeFiles/DBMS-sql.dir/Store.cpp.s
-
-CMakeFiles/DBMS-sql.dir/Store.cpp.o.requires:
-
-.PHONY : CMakeFiles/DBMS-sql.dir/Store.cpp.o.requires
-
-CMakeFiles/DBMS-sql.dir/Store.cpp.o.provides: CMakeFiles/DBMS-sql.dir/Store.cpp.o.requires
-	$(MAKE) -f CMakeFiles/DBMS-sql.dir/build.make CMakeFiles/DBMS-sql.dir/Store.cpp.o.provides.build
-.PHONY : CMakeFiles/DBMS-sql.dir/Store.cpp.o.provides
-
-CMakeFiles/DBMS-sql.dir/Store.cpp.o.provides.build: CMakeFiles/DBMS-sql.dir/Store.cpp.o
-
-
-CMakeFiles/DBMS-sql.dir/Supplier.cpp.o: CMakeFiles/DBMS-sql.dir/flags.make
-CMakeFiles/DBMS-sql.dir/Supplier.cpp.o: ../Supplier.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/michaelrokitko/Desktop/לימודים שנקר/nudler/DBMS-sql/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/DBMS-sql.dir/Supplier.cpp.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/DBMS-sql.dir/Supplier.cpp.o -c "/Users/michaelrokitko/Desktop/לימודים שנקר/nudler/DBMS-sql/Supplier.cpp"
-
-CMakeFiles/DBMS-sql.dir/Supplier.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/DBMS-sql.dir/Supplier.cpp.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/michaelrokitko/Desktop/לימודים שנקר/nudler/DBMS-sql/Supplier.cpp" > CMakeFiles/DBMS-sql.dir/Supplier.cpp.i
-
-CMakeFiles/DBMS-sql.dir/Supplier.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/DBMS-sql.dir/Supplier.cpp.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/michaelrokitko/Desktop/לימודים שנקר/nudler/DBMS-sql/Supplier.cpp" -o CMakeFiles/DBMS-sql.dir/Supplier.cpp.s
-
-CMakeFiles/DBMS-sql.dir/Supplier.cpp.o.requires:
-
-.PHONY : CMakeFiles/DBMS-sql.dir/Supplier.cpp.o.requires
-
-CMakeFiles/DBMS-sql.dir/Supplier.cpp.o.provides: CMakeFiles/DBMS-sql.dir/Supplier.cpp.o.requires
-	$(MAKE) -f CMakeFiles/DBMS-sql.dir/build.make CMakeFiles/DBMS-sql.dir/Supplier.cpp.o.provides.build
-.PHONY : CMakeFiles/DBMS-sql.dir/Supplier.cpp.o.provides
-
-CMakeFiles/DBMS-sql.dir/Supplier.cpp.o.provides.build: CMakeFiles/DBMS-sql.dir/Supplier.cpp.o
-
-
 # Object files for target DBMS-sql
 DBMS__sql_OBJECTS = \
 "CMakeFiles/DBMS-sql.dir/main.cpp.o" \
-"CMakeFiles/DBMS-sql.dir/Database.cpp.o" \
-"CMakeFiles/DBMS-sql.dir/Book.cpp.o" \
-"CMakeFiles/DBMS-sql.dir/Order.cpp.o" \
-"CMakeFiles/DBMS-sql.dir/Customer.cpp.o" \
-"CMakeFiles/DBMS-sql.dir/Store.cpp.o" \
-"CMakeFiles/DBMS-sql.dir/Supplier.cpp.o"
+"CMakeFiles/DBMS-sql.dir/Database.cpp.o"
 
 # External object files for target DBMS-sql
 DBMS__sql_EXTERNAL_OBJECTS =
 
 DBMS-sql: CMakeFiles/DBMS-sql.dir/main.cpp.o
 DBMS-sql: CMakeFiles/DBMS-sql.dir/Database.cpp.o
-DBMS-sql: CMakeFiles/DBMS-sql.dir/Book.cpp.o
-DBMS-sql: CMakeFiles/DBMS-sql.dir/Order.cpp.o
-DBMS-sql: CMakeFiles/DBMS-sql.dir/Customer.cpp.o
-DBMS-sql: CMakeFiles/DBMS-sql.dir/Store.cpp.o
-DBMS-sql: CMakeFiles/DBMS-sql.dir/Supplier.cpp.o
 DBMS-sql: CMakeFiles/DBMS-sql.dir/build.make
 DBMS-sql: CMakeFiles/DBMS-sql.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="/Users/michaelrokitko/Desktop/לימודים שנקר/nudler/DBMS-sql/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_8) "Linking CXX executable DBMS-sql"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="/Users/michaelrokitko/Desktop/לימודים שנקר/nudler/DBMS-sql/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable DBMS-sql"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/DBMS-sql.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -257,11 +127,6 @@ CMakeFiles/DBMS-sql.dir/build: DBMS-sql
 
 CMakeFiles/DBMS-sql.dir/requires: CMakeFiles/DBMS-sql.dir/main.cpp.o.requires
 CMakeFiles/DBMS-sql.dir/requires: CMakeFiles/DBMS-sql.dir/Database.cpp.o.requires
-CMakeFiles/DBMS-sql.dir/requires: CMakeFiles/DBMS-sql.dir/Book.cpp.o.requires
-CMakeFiles/DBMS-sql.dir/requires: CMakeFiles/DBMS-sql.dir/Order.cpp.o.requires
-CMakeFiles/DBMS-sql.dir/requires: CMakeFiles/DBMS-sql.dir/Customer.cpp.o.requires
-CMakeFiles/DBMS-sql.dir/requires: CMakeFiles/DBMS-sql.dir/Store.cpp.o.requires
-CMakeFiles/DBMS-sql.dir/requires: CMakeFiles/DBMS-sql.dir/Supplier.cpp.o.requires
 
 .PHONY : CMakeFiles/DBMS-sql.dir/requires
 

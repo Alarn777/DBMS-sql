@@ -9,6 +9,7 @@
 #include "Supplier.h"
 using namespace std;
 void clearCin();
+
 int main()
 {
 //    Store MyStore;
@@ -183,7 +184,7 @@ int main()
                 cin.clear();
                 clearCin();
                 cin >> start;
-                myCustomer.moneySavedBySpecificCustomer(ssn,start);
+                myCustomer.moneySavedBySpecificCustomer(ssn,start);  //needs to be switched to phone number?
                 break;
             }
             case 16:{
@@ -235,7 +236,7 @@ int main()
                 MyStore.checkSalesOfAnEmployee(id_employee,start,end);
                 break;
             }
-            case 20:{
+            case 20:{                             //problem
                 cout << "Please enter start date ****-**-**" << endl;
                 cin.clear();
                 clearCin();

@@ -84,13 +84,7 @@
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/Users/michaelrokitko/Desktop/לימודים שנקר/nudler/DBMS-sql/Book.cpp">
-			<Option target="DBMS-sql"/>
-		</Unit>
 		<Unit filename="/Users/michaelrokitko/Desktop/לימודים שנקר/nudler/DBMS-sql/Book.h">
-			<Option target="DBMS-sql"/>
-		</Unit>
-		<Unit filename="/Users/michaelrokitko/Desktop/לימודים שנקר/nudler/DBMS-sql/Customer.cpp">
 			<Option target="DBMS-sql"/>
 		</Unit>
 		<Unit filename="/Users/michaelrokitko/Desktop/לימודים שנקר/nudler/DBMS-sql/Customer.h">
@@ -102,19 +96,10 @@
 		<Unit filename="/Users/michaelrokitko/Desktop/לימודים שנקר/nudler/DBMS-sql/Database.h">
 			<Option target="DBMS-sql"/>
 		</Unit>
-		<Unit filename="/Users/michaelrokitko/Desktop/לימודים שנקר/nudler/DBMS-sql/Order.cpp">
-			<Option target="DBMS-sql"/>
-		</Unit>
 		<Unit filename="/Users/michaelrokitko/Desktop/לימודים שנקר/nudler/DBMS-sql/Order.h">
 			<Option target="DBMS-sql"/>
 		</Unit>
-		<Unit filename="/Users/michaelrokitko/Desktop/לימודים שנקר/nudler/DBMS-sql/Store.cpp">
-			<Option target="DBMS-sql"/>
-		</Unit>
 		<Unit filename="/Users/michaelrokitko/Desktop/לימודים שנקר/nudler/DBMS-sql/Store.h">
-			<Option target="DBMS-sql"/>
-		</Unit>
-		<Unit filename="/Users/michaelrokitko/Desktop/לימודים שנקר/nudler/DBMS-sql/Supplier.cpp">
 			<Option target="DBMS-sql"/>
 		</Unit>
 		<Unit filename="/Users/michaelrokitko/Desktop/לימודים שנקר/nudler/DBMS-sql/Supplier.h">

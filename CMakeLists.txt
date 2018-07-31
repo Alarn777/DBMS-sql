@@ -16,12 +16,11 @@ endif()
 
 set(SOURCE_FILES
         main.cpp
-        menu.h
         Database.cpp
+        menu.h
         Database.h
-        Book.cpp
         Book.h
-        Order.cpp Order.h Customer.cpp Customer.h Store.cpp Store.h Supplier.cpp Supplier.h)
+        Order.h Customer.h Store.h Supplier.h)
 add_executable(DBMS-sql ${SOURCE_FILES})
 
 
