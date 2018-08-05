@@ -73,8 +73,8 @@
       <file leaf-file-name="Database.cpp" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Database.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="14" column="13" lean-forward="true" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
+            <state relative-caret-position="345">
+              <caret line="23" column="45" lean-forward="false" selection-start-line="23" selection-start-column="45" selection-end-line="23" selection-end-column="45" />
               <folding />
             </state>
           </provider>
@@ -189,7 +189,7 @@
     <ConfirmationsSetting value="2" id="Add" />
   </component>
   <component name="ProjectView">
-    <navigator currentView="ProjectPane" proportions="" version="1">
+    <navigator proportions="" version="1">
       <flattenPackages />
       <showMembers />
       <showModules />
@@ -202,19 +202,7 @@
       <manualOrder />
       <foldersAlwaysOnTop value="true" />
     </navigator>
-    <panes>
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="DBMS-sql" type="dad4c3:CidrFilesViewHelper$MyProjectTreeStructure$1" />
-              <item name="DBMS-sql" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
-    </panes>
+    <panes />
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
@@ -274,7 +262,7 @@
       <workItem from="1532693355375" duration="7503000" />
       <workItem from="1532727606828" duration="19758000" />
       <workItem from="1532908271599" duration="4530000" />
-      <workItem from="1533472971426" duration="2580000" />
+      <workItem from="1533472971426" duration="2972000" />
     </task>
     <task id="LOCAL-00001" summary="Show All Books Working">
       <created>1532182898379</created>
@@ -402,11 +390,18 @@
       <option name="project" value="LOCAL" />
       <updated>1533054843815</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="Options : 1-20 Working with full DB&#10;Fixed remarks a-b-c.&#10;Menu working.&#10;Database manually inserted.">
+      <created>1533478920063</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1533478920063</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="107687000" />
+    <option name="totallyTimeSpent" value="108079000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1280" height="730" extended-state="0" />
@@ -472,7 +467,8 @@
     <MESSAGE value="Options : 1-19 Working&#10;Fixed remarks a-b-c.&#10;Menu working." />
     <MESSAGE value="Options : 1-20 Working&#10;Fixed remarks a-b-c.&#10;Menu working." />
     <MESSAGE value="Options : 1-20 Working with full DB&#10;Fixed remarks a-b-c.&#10;Menu working." />
-    <option name="LAST_COMMIT_MESSAGE" value="Options : 1-20 Working with full DB&#10;Fixed remarks a-b-c.&#10;Menu working." />
+    <MESSAGE value="Options : 1-20 Working with full DB&#10;Fixed remarks a-b-c.&#10;Menu working.&#10;Database manually inserted." />
+    <option name="LAST_COMMIT_MESSAGE" value="Options : 1-20 Working with full DB&#10;Fixed remarks a-b-c.&#10;Menu working.&#10;Database manually inserted." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -837,8 +833,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Database.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="14" column="13" lean-forward="true" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
+        <state relative-caret-position="345">
+          <caret line="23" column="45" lean-forward="false" selection-start-line="23" selection-start-column="45" selection-end-line="23" selection-end-column="45" />
           <folding />
         </state>
       </provider>
